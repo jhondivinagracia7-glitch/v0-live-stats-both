@@ -1,5 +1,8 @@
 require("dotenv").config();
 
+const fs   = require("fs");
+const path = require("path");
+
 const {
   Client,
   GatewayIntentBits,
@@ -111,9 +114,32 @@ const client = new Client({
   ],
 });
 
-// Persists the last status set via !changestatus so the ready handler can
-// restore it after reconnects instead of overwriting with the default.
-let customStatus = null; // { name: string, type: ActivityType }
+// ── Custom status persistence ────────────────────────────────────────────────
+// Saved to disk so the status survives bot restarts/crashes.
+// File stores: { name: string, type: number } (ActivityType is a number enum).
+const STATUS_FILE = path.join(__dirname, "custom_status.json");
+
+function loadCustomStatus() {
+  try {
+    if (fs.existsSync(STATUS_FILE)) {
+      return JSON.parse(fs.readFileSync(STATUS_FILE, "utf8"));
+    }
+  } catch (e) {
+    console.error("[status] Failed to read custom_status.json:", e.message);
+  }
+  return null;
+}
+
+function saveCustomStatus(data) {
+  try {
+    fs.writeFileSync(STATUS_FILE, JSON.stringify(data), "utf8");
+  } catch (e) {
+    console.error("[status] Failed to write custom_status.json:", e.message);
+  }
+}
+
+// Load persisted status on startup (null = use default "Watching members join")
+let customStatus = loadCustomStatus();
 
 // Auto-purge function
 async function autoPurgeChannels() {
@@ -742,7 +768,7 @@ client.on("messageCreate", async (message) => {
       "<:InsanityPoint:1503717002475339947> **ʙʟᴏxꜰʀᴜɪᴛꜱ:**",
       "https://streamable.com/godall",
       "",
-      "<:InsanityPoint:1503717002475339947> **ɢᴀɢ:**",
+      "<:InsanityPoint:1503717002475339947> **ɢᴀ��:**",
       "https://cdn.discordapp.com/attachments/1363585727979589823/1381334942885347398/op_asf_edited_replay_1.mp4?ex=68696aea&is=6868196a&hm=396b78b4219412bdc60bdbe61b1538bf54839d252f7a520efd215a6525d448b6"
     ];
 
@@ -2020,8 +2046,9 @@ client.on("messageCreate", async (message) => {
         status: "online",
       });
 
-      // Persist so the ready handler restores this on reconnect instead of the default.
+      // Persist to disk so the status survives bot restarts.
       customStatus = { name: statusText, type: activityType };
+      saveCustomStatus(customStatus);
 
       await message.reply({
         content: `<a:emoji_13:1508646379751342130> Bot status changed to: **${statusType.charAt(0).toUpperCase() + statusType.slice(1)}** ${statusText}`,
