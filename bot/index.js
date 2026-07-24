@@ -602,7 +602,7 @@ client.on("messageCreate", async (message) => {
         message: "https://youtu.be/eP6dLhv0UKY?si=IDRwYwdAKokMVxas"
       },
       {
-        title: "ᴄᴏᴏ��ɪ�� ��������������ᴏɢɪɴ (ᴘᴄ)",
+        title: "ᴄᴏᴏ��ɪ��� ��������������ᴏɢɪɴ (ᴘᴄ)",
         message: "https://youtu.be/HsDwr3ecCSU?si=ZihNHGi8f2z1JMHO"
       },
       {
@@ -642,7 +642,7 @@ client.on("messageCreate", async (message) => {
         name: "ᴛɪᴋᴛᴏᴋ ʟɪᴠᴇ",
         image1: "https://cdn.discordapp.com/attachments/1506434367491276812/1509399153321443388/image0_1.gif?ex=6a190901&is=6a17b781&hm=8d73fe9824d744a19022718c65a469779f8e8f9f86e82a0b5fda2f9010d9da5a",
         image2: "https://cdn.discordapp.com/attachments/1506434367491276812/1509394265141415936/1773637630733-5bee7763-8a95-48c0-8857-b9f2196e8d11.gif?ex=6a190473&is=6a17b2f3&hm=2866b7b7ca9eff6d39f1ccbc30640a1ee0fa62adac8619771cf9d455c329a76b",
-        body: "**── ᴛɪᴋᴛᴏᴋ ʟɪᴠᴇ ──**\n\n__**ʜᴏᴡ ɪᴛ ᴡᴏʀᴋꜱ**__\n- ʏᴏᴜ ɢᴏ ʟɪᴠᴇ ᴏɴ ᴛɪᴋᴛᴏᴋ ᴜꜱɪɴɢ ᴀ ꜰᴀ��ᴇ ʀᴏʙʟᴏx ɢɪᴠᴇᴀᴡᴀʏ ᴠɪᴅᴇᴏ, ᴀɴᴅ ᴛʀʏ ᴛᴏ ɢᴇᴛ ᴀꜱ ᴍᴀɴʏ ᴠɪᴇᴡᴇʀꜱ ᴀꜱ ᴘᴏꜱꜱɪʙʟᴇ. ᴀɴᴅ ʏᴏᴜ ᴡ��ʟʟ ʜ���ᴠ��� ꜰᴀᴋᴇ ʟɪɴ�� ɪɴ ʏᴏᴜʀ ᴛɪᴋᴛᴏᴋ ʙɪᴏ ꜱᴏ ʏᴏᴜ ɢᴇᴛ ᴀᴄᴄᴏᴜɴᴛꜱ\n\n__**ʀᴇqᴜɪʀᴇᴍᴇɴᴛꜱ**__\n- ꜰᴏʀ ᴘᴄ ʟɪᴠᴇ ʏᴏᴜ ɴᴇᴇᴅ ᴛɪᴋᴛᴏᴋ ᴀᴄᴄᴏᴜɴᴛ ᴡɪᴛʜ ʟɪᴠᴇ ꜱᴛᴜᴅɪᴏ ᴀᴄᴄᴇꜱꜱ\n- ꜰᴏʀ ᴍᴏʙɪʟᴇ ʟɪᴠᴇ ʏᴏᴜ ɴᴇᴇᴅ ᴛɪᴋᴛᴏᴋ ᴀ���ᴄ���ᴜɴᴛ ᴡɪᴛʜ ᴍᴏʙɪʟᴇ ɢᴀᴍɪɴɢ ʟɪᴠᴇ ᴀᴄᴄᴇꜱꜱ\n- ᴀʟꜱᴏ ᴛʜɪꜱ ᴍᴇᴛʜᴏᴅꜱ ɴᴇᴇᴅꜱ ꜱᴏᴍᴇ ʙʀᴀɪɴ, ᴄᴀɴᴛ ʙᴇ ᴀ ʀᴇᴛᴀʀᴅ.\n\n__**ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴛɪᴋᴛᴏᴋ ʟɪᴠᴇ ᴀᴄᴄ**__\n- ɢᴏ ᴛᴏ ʀᴏʙʟᴏx ᴄʀᴏꜱꜱᴛʀᴀᴅɪɴɢ ꜱᴇʀᴠᴇʀ ᴀɴᴅ ᴛʀᴀᴅᴇ ꜰᴏʀ ᴏɴᴇ\n- ᴜꜱᴇ ᴛʜɪꜱ ꜰᴏʟʟᴏᴡᴇʀ ʙᴏᴛᴛɪɴɢ ꜱᴇʀᴠɪᴄᴇ, ᴛᴏ ʙᴏᴛ 1ᴋ ꜰᴏʟʟᴏᴡᴇʀꜱ ᴏɴʟʏ ꜰᴏʀ 2$ https://yoursmm.net/\n- ᴏʀ ᴜꜱᴇ ᴛʜɪꜱ ᴍᴇᴛʜᴏᴅ ᴛᴏ ᴇᴀꜱɪ��������ʏ ɢᴇᴛ 1ᴋ ꜰᴏʟʟᴏᴡᴇʀꜱ ɪɴ 3 ᴅᴀʏꜱ ᴏʀ ʟᴇꜱꜱ https://justpaste.it/follow-method\n\n__**ᴄʜᴏᴏꜱɪɴɢ ʟɪɴᴋ**__\n- ɢᴏ ᴛᴏ ɪɴꜱᴀɴɪᴛʏ ꜱɪᴛᴇꜱ ᴀɴᴅ ᴛʜᴇɴ ᴘɪᴄᴋ ᴏɴᴇ ᴏꜰ ᴛʜᴇ ᴛɪᴋᴛᴏᴋ ʟɪɴᴋꜱ\n- ᴀʟᴡᴀʏꜱ ʀᴇᴍᴇᴍʙᴇʀ ᴛᴏ ᴛᴇꜱᴛ ᴛʜᴇ ʟɪɴᴋ ʙᴇꜰᴏʀᴇ ɢᴏɪɴɢ ʟɪᴠᴇ\n- ɪꜰ ʟɪɴᴋ ɪꜱ ꜰʟᴀɢɢᴇᴅ ᴛʜ�������ɴ ᴛʀʏ ʀᴇᴍᴏᴠɪɴɢ ᴛʜᴇ ᴡᴡᴡ. ᴏʀ ʜᴛᴛᴘꜱ: ꜰʀᴏᴍ ᴛʜᴇ ʟɪɴᴋ\n- ᴜꜱɪɴɢ ʙᴇᴀᴄᴏɴꜱ.ᴀɪ > ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʙᴇᴀᴄᴏɴꜱ.ᴀɪ ʙɪᴏʟɪɴᴋ ᴛᴏ ᴍᴀᴋᴇ ɪᴛ ʟᴏᴏᴋ ᴍᴏʀᴇ ʀᴇᴀʟɪꜱᴛɪᴄ. ᴛʜɪꜱ ɪꜱ ᴍʏ ʙᴇᴀᴄᴏɴꜱ ᴀɪ https://beacons.ai/joinadoptme ʏᴏᴜ ᴄᴀɴ ᴛᴀᴋᴇ ɪɴꜱᴘɪʀᴀᴛɪᴏɴ ᴀɴᴅ ᴛʜᴇɴ ᴀᴅᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ ᴛɪᴋᴛᴏᴋ ʙɪᴏ\n- ɪꜰ ʏᴏᴜ ᴄᴀɴᴛ ᴀᴅᴅ ʟɪɴᴋ ᴛᴏ ᴛɪᴋᴛᴏᴋ ʙɪᴏ ᴛʜᴇɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴛɪᴋᴛᴏᴋ ᴀᴄᴄᴏᴜɴᴛ ɪɴᴛᴏ ʙᴜꜱɪɴᴇꜱꜱ ᴀᴄᴄᴏᴜɴᴛ ꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ʙᴜꜱɪɴᴇꜱꜱ ʟɪɴᴋ\n\n__**ʜᴏᴡ ᴛᴏ ɢᴏ ʟɪᴠᴇ/ʟᴏᴏᴘ ᴠɪᴅᴇᴏ**__\n- ᴏɴ ᴘᴄ ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪᴠᴇ ꜱᴛᴜᴅɪᴏ ᴀɴᴅ ᴛʜᴇɴ ꜱᴇᴛ ɪᴛ ᴜᴘ ᴛʜᴇɴ ��ᴜꜱᴛ ᴘɪᴄᴋ ᴀ ɢᴏᴏᴅ ᴠɪᴅᴇᴏ ᴀɴᴅ ɢᴏ ʟɪᴠᴇ\n- ᴏɴ ᴍᴏʙɪʟᴇ ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ʟᴏᴏᴘ ᴛʜᴇ ᴠɪᴅᴇᴏ ꜰʀᴏᴍ ɢᴀʟʟᴇʀʏ ꜱᴇᴛᴛɪɴɢꜱ ᴀʟᴛᴇᴀꜱᴛ ᴏɴ ᴀɴᴅʀᴏɪᴅ\n\n**__ᴍᴜꜱᴛ ʀᴇᴍᴇᴍʙᴇʀ ᴛʜᴇꜱᴇ__**\n- ᴡʜᴇɴ ʏᴏᴜ ɢᴏ ʟɪᴠᴇ ᴀʟᴡᴀʏꜱ ʀᴇᴍᴇᴍʙᴇʀ ᴛᴏ ᴍᴜᴛᴇ ʏᴏᴜʀ ᴍɪᴄ ᴄʜᴇᴄᴋ ᴛᴜᴛᴏʀɪᴀʟ ᴏɴ ʏᴛ ʜᴏᴡ ᴛᴏ.\n- ᴘᴜᴛ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ ᴏꜰꜰ\n- ʀᴇᴍᴇᴍʙᴇʀ ᴛᴏ ʙʟᴀᴄᴋʟɪꜱᴛ ʙᴀᴅ ᴡᴏʀᴅꜱ\n\n__**ᴘɪᴄᴋɪɴɢ ɢᴀᴍᴇ ᴄᴀᴛᴇɢᴏʀʏ ᴀɴᴅ ᴛɪᴛʟᴇ**__\n- ᴏꜰ ʏᴏᴜʀ ᴏɴ ᴍᴏʙɪʟᴇ ᴛʜᴇɴ ʏᴏᴜʀ ʟɪᴠᴇ ɢᴀᴍᴇ ᴄᴀᴛᴇɢᴏʀʏ __ᴍᴜꜱᴛ__ ʙᴇ ꜱᴜʙᴡᴀʏ ꜱᴜʀꜰᴇʀꜱ ᴏʀ ᴄʟᴀꜱʜ ʀᴏʏᴀʟᴇ. ᴏɴ ᴘᴄ ɪᴛ ᴄᴀɴ ʙᴇ ʀᴏʙʟᴏx\n- ᴛɪᴛʟᴇ ᴄᴀɴ ʙᴇ ᴘʀᴏʙᴀʙʟʏ ᴀɴʏᴛʜɪɴɢ ʙᴜᴛ ʙᴇ ᴄᴀʀᴇꜰᴜʟ ᴡɪᴛʜ ᴡᴏʀᴅꜱ ʟɪᴋᴇ ꜰʀᴇᴇ ᴀɴᴅ ɢɪᴠᴇᴀᴡᴀʏ ꜱɪɴᴄᴇ ᴛɪᴋᴛᴏᴋ ᴅᴏᴇꜱɴᴛ ᴀʟᴡᴀʏꜱ ʟɪᴋᴇ ᴛʜᴇᴍ\n\n__**ʜᴏᴡ ʟᴏɴɢ ᴛᴏ ʙᴇ ʟɪᴠᴇ ꜰᴏʀ**__\n- ɴᴇᴠᴇʀ ʙᴇ ʟɪᴠᴇ ꜰᴏʀ ᴀʟᴏᴛ ᴏꜰ ʜᴏᴜʀꜱ ᴜɴʟᴇꜱꜱ ʏᴏᴜʀ ʟɪᴠᴇ ɪꜱ ꜱᴛᴀʙʟᴇ ᴀꜱꜰ. ʟɪᴋᴇ ʜᴀᴠɪɴɢ ᴀʙᴛ ʜᴜɴᴅʀᴇᴅ ᴠɪᴇᴡᴇʀꜱ ᴏʀ ᴍᴏʀᴇ ꜰᴏʀ ʜᴏᴜʀꜱ.\n- ᴡʜᴇɴ ʏᴏᴜ ꜱᴛᴀʀᴛ ʟɪᴠᴇ ʏᴏᴜ ꜱʜᴏᴜʟᴅ ᴅᴏ ɪᴛ ᴏɴʟʏ ꜰᴏʀ 20 ᴍɪɴꜱ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴇᴄᴋ ᴛᴏ ɪꜰ ᴇɴᴅ ᴛʜᴇ ʟɪᴠᴇ ᴏʀ ɴᴏᴛ.\n\n__**ʜᴇʀᴇꜱ ᴡʜᴇɴ ᴛᴏ ᴇɴᴅ ᴀɴᴅ ᴡʜᴇɴ ᴛᴏ ɴᴏᴛ ᴛᴏ**__\n- ɪꜰ ᴀꜰᴛᴇʀ 20 ᴍɪɴꜱ ʏᴏᴜʀ ᴠɪᴇᴡᴇʀꜱ ᴀʀᴇ ʙᴇʟᴏᴡ 10 ᴛʜᴇɴ ᴇɴᴅ ʏᴏᴜʀ ʟɪᴠᴇ\n- ɪꜰ ᴛʜᴇʏʀᴇ ᴀʙᴏᴠᴇ 10 ᴛʜᴇɴ ʜᴇʀᴇꜱ ꜱᴍᴀʟʟ ᴄʜᴀɴᴄᴇ ᴏꜰ ɢᴏɪɴɢ ᴠɪʀᴀʟ\n- ᴀʙᴏᴠᴇ 20 ᴠɪᴇᴡᴇʀꜱ = ɢᴏᴏᴅ ᴄʜᴀɴᴄᴇ ᴛᴏ ɢᴏ ᴠɪʀᴀʟ\n- ᴀʙᴏᴠᴇ 40 ᴠɪᴇᴡᴇʀꜱ ɪꜱ ᴠᴇʀʏ ɢᴏᴏᴅ ᴋᴇᴇᴘ ɪᴛ ᴜᴘ ᴜɴᴛɪʟ ᴛʜᴇʏ ꜱᴛᴀʀᴛ ᴅʀᴏᴘᴘɪɴɢ!!\n\n**__ᴘᴜᴍᴘɪɴɢ ᴍᴇᴛʜᴏᴅ__**\nᴛ����ɪꜱ ɪꜱ ᴀ ᴍᴇᴛʜᴏᴅ ᴛᴏ ᴛɪᴋᴛᴏᴋ ʟɪᴠᴇ ɢʀᴏᴡ ᴠɪᴇᴡᴇʀ��.\n- ʙᴀꜱɪᴄᴀʟʟʏ ᴊᴜꜱᴛ ɢᴏ ʟɪᴠᴇ ᴜɴᴛɪʟ ᴠɪᴇᴡᴇʀꜱ ɢʀᴏᴡ ᴀɴ�� ᴡʜᴇɴ ᴛʜᴡʏ ᴅʀᴏᴘ ʙʏ ᴀ ʙɪᴛ ᴊᴜꜱᴛ ᴇɴᴅ ᴛʜᴇ ʟɪᴠᴇ ɪᴍ���ᴇᴅɪᴀ���ᴇʟʟʏ > ᴀɴᴅ ᴛʜᴇɴ ꜱᴛᴀʀᴛ ʟɪᴠᴇ ᴀʟᴍᴏꜱ��� ɪᴍᴍᴇᴅɪᴀʟʟʏ ᴀɢᴀɪɴ ᴀɴᴅ ʀᴇᴘᴇᴀᴛ ᴛʜɪꜱ ᴜɴᴛɪʟ ʏᴏᴜ ʜᴀᴠᴇ ꜱᴛᴀ��ʟᴇ ᴀꜱ�� ʟɪᴠᴇ ᴡɪᴛʜ ʜᴜ��ᴅʀᴇ����ꜱ ᴏꜰ ��ɪᴇᴡᴇʀ���!!!\n\n**ʜᴇʀᴇꜱ ꜱᴏᴍᴇ ʀᴀɴᴅᴏᴍ ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅꜱ ɪ ꜰᴏᴜɴᴅ ʏᴏᴜ ᴄ��ɴ ᴡᴀ��ᴄʜ ᴛ�� ʟᴇᴀʀɴ, __���ᴜꜱ��__ ꜱᴛɪʟʟ ʀᴇᴀᴅ ꜰᴜʟʟ ᴛᴇxᴛ ᴏᴛʜᴇʀᴡɪꜱᴇ ʏᴏᴜ ᴡᴏɴᴛ ɢᴇᴛ ᴠɪᴇᴡᴇʀꜱ 😐**\nhttps://youtu.be/B-zZHryfuTs?si=XmrEatq2l3nyd0UP\nhttps://www.youtube.com/watch?v=RGaJMb7bRq8&t=1s"
+        body: "**── ᴛɪᴋᴛᴏᴋ ʟɪᴠᴇ ──**\n\n__**ʜᴏᴡ ɪᴛ ᴡᴏʀᴋꜱ**__\n- ʏᴏᴜ ɢᴏ ʟɪᴠᴇ ᴏɴ ᴛɪᴋᴛᴏᴋ ᴜꜱɪɴɢ ᴀ ꜰᴀ��ᴇ ʀᴏʙʟᴏx ɢɪᴠᴇᴀᴡᴀʏ ᴠɪᴅᴇᴏ, ᴀɴᴅ ᴛʀʏ ᴛᴏ ɢᴇᴛ ᴀꜱ ᴍᴀɴʏ ᴠɪᴇᴡᴇʀꜱ ᴀꜱ ᴘᴏꜱꜱɪʙʟᴇ. ᴀɴᴅ ʏᴏᴜ �����ʟʟ ʜ���ᴠ��� ꜰᴀᴋᴇ ʟɪɴ�� ɪɴ ʏᴏᴜʀ ᴛɪᴋᴛᴏᴋ ʙɪᴏ ꜱᴏ ʏᴏᴜ ɢᴇᴛ ᴀᴄᴄᴏᴜɴᴛꜱ\n\n__**ʀᴇqᴜɪʀᴇᴍᴇɴᴛꜱ**__\n- ꜰᴏʀ ᴘᴄ ʟɪᴠᴇ ʏᴏᴜ ɴᴇᴇᴅ ᴛɪᴋᴛᴏᴋ ᴀᴄᴄᴏᴜɴᴛ ᴡɪᴛʜ ʟɪᴠᴇ ꜱᴛᴜᴅɪᴏ ᴀᴄᴄᴇꜱꜱ\n- ꜰᴏʀ ᴍᴏʙɪʟᴇ ʟɪᴠᴇ ʏᴏᴜ ɴᴇᴇᴅ ᴛɪᴋᴛᴏᴋ ᴀ���ᴄ���ᴜɴᴛ ᴡɪᴛʜ ᴍᴏʙɪʟᴇ ɢᴀᴍɪɴɢ ʟɪᴠᴇ ᴀᴄᴄᴇꜱꜱ\n- ᴀʟꜱᴏ ᴛʜɪꜱ ᴍᴇᴛʜᴏᴅꜱ ɴᴇᴇᴅꜱ ꜱᴏᴍᴇ ʙʀᴀɪɴ, ᴄᴀɴᴛ ʙᴇ ᴀ ʀᴇᴛᴀʀᴅ.\n\n__**ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴛɪᴋᴛᴏᴋ ʟɪᴠᴇ ᴀᴄᴄ**__\n- ɢᴏ ᴛᴏ ʀᴏʙʟᴏx ᴄʀᴏꜱꜱᴛʀᴀᴅɪɴɢ ꜱᴇʀᴠᴇʀ ᴀɴᴅ ᴛʀᴀᴅᴇ ꜰᴏʀ ᴏɴᴇ\n- ᴜꜱᴇ ᴛʜɪꜱ ꜰᴏʟʟᴏᴡᴇʀ ʙᴏᴛᴛɪɴɢ ꜱᴇʀᴠɪᴄᴇ, ᴛᴏ ʙᴏᴛ 1ᴋ ꜰᴏʟʟᴏᴡᴇʀꜱ ᴏɴʟʏ ꜰᴏʀ 2$ https://yoursmm.net/\n- ᴏʀ ᴜꜱᴇ ᴛʜɪꜱ ᴍᴇᴛʜᴏᴅ ᴛᴏ ᴇᴀꜱɪ��������ʏ ɢᴇᴛ 1ᴋ ꜰᴏʟʟᴏᴡᴇʀꜱ ɪɴ 3 ᴅᴀʏꜱ ᴏʀ ʟᴇꜱꜱ https://justpaste.it/follow-method\n\n__**ᴄʜᴏᴏꜱɪɴɢ ʟɪɴᴋ**__\n- ɢᴏ ᴛᴏ ɪɴꜱᴀɴɪᴛʏ ꜱɪᴛᴇꜱ ᴀɴᴅ ᴛʜᴇɴ ᴘɪᴄᴋ ᴏɴᴇ ᴏꜰ ᴛʜᴇ ᴛɪᴋᴛᴏᴋ ʟɪɴᴋꜱ\n- ᴀʟᴡᴀʏꜱ ʀᴇᴍᴇᴍʙᴇʀ ᴛᴏ ᴛᴇꜱᴛ ᴛʜᴇ ʟɪɴᴋ ʙᴇꜰᴏʀᴇ ɢᴏɪɴɢ ʟɪᴠᴇ\n- ɪꜰ ʟɪɴᴋ ɪꜱ ꜰʟᴀɢɢᴇᴅ ᴛʜ�������ɴ ᴛʀʏ ʀᴇᴍᴏᴠɪɴɢ ᴛʜᴇ ᴡᴡᴡ. ᴏʀ ʜᴛᴛᴘꜱ: ꜰʀᴏᴍ ᴛʜᴇ ʟɪɴᴋ\n- ᴜꜱɪɴɢ ʙᴇᴀᴄᴏɴꜱ.ᴀɪ > ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʙᴇᴀᴄᴏɴꜱ.ᴀɪ ʙɪᴏʟɪɴᴋ ᴛᴏ ᴍᴀᴋᴇ ɪᴛ ʟᴏᴏᴋ ᴍᴏʀᴇ ʀᴇᴀʟɪꜱᴛɪᴄ. ᴛʜɪꜱ ɪꜱ ᴍʏ ʙᴇᴀᴄᴏɴꜱ ᴀɪ https://beacons.ai/joinadoptme ʏᴏᴜ ᴄᴀɴ ᴛᴀᴋᴇ ɪɴꜱᴘɪʀᴀᴛɪᴏɴ ᴀɴᴅ ᴛʜᴇɴ ᴀᴅᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ ᴛɪᴋᴛᴏᴋ ʙɪᴏ\n- ɪꜰ ʏᴏᴜ ᴄᴀɴᴛ ᴀᴅᴅ ʟɪɴᴋ ᴛᴏ ᴛɪᴋᴛᴏᴋ ʙɪᴏ ᴛʜᴇɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴛɪᴋᴛᴏᴋ ᴀᴄᴄᴏᴜɴᴛ ɪɴᴛᴏ ʙᴜꜱɪɴᴇꜱꜱ ᴀᴄᴄᴏᴜɴᴛ ꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ʙᴜꜱɪɴᴇꜱꜱ ʟɪɴᴋ\n\n__**ʜᴏᴡ ᴛᴏ ɢᴏ ʟɪᴠᴇ/ʟᴏᴏᴘ ᴠɪᴅᴇᴏ**__\n- ᴏɴ ᴘᴄ ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪᴠᴇ ꜱᴛᴜᴅɪᴏ ᴀɴᴅ ᴛʜᴇɴ ꜱᴇᴛ ɪᴛ ᴜᴘ ᴛʜᴇɴ ��ᴜꜱᴛ ᴘɪᴄᴋ ᴀ ɢᴏᴏᴅ ᴠɪᴅᴇᴏ ᴀɴᴅ ɢᴏ ʟɪᴠᴇ\n- ᴏɴ ᴍᴏʙɪʟᴇ ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ʟᴏᴏᴘ ᴛʜᴇ ᴠɪᴅᴇᴏ ꜰʀᴏᴍ ɢᴀʟʟᴇʀʏ ꜱᴇᴛᴛɪɴɢꜱ ᴀʟᴛᴇᴀꜱᴛ ᴏɴ ᴀɴᴅʀᴏɪᴅ\n\n**__ᴍᴜꜱᴛ ʀᴇᴍᴇᴍʙᴇʀ ᴛʜᴇꜱᴇ__**\n- ᴡʜᴇɴ ʏᴏᴜ ɢᴏ ʟɪᴠᴇ ᴀʟᴡᴀʏꜱ ʀᴇᴍᴇᴍʙᴇʀ ᴛᴏ ᴍᴜᴛᴇ ʏᴏᴜʀ ᴍɪᴄ ᴄʜᴇᴄᴋ ᴛᴜᴛᴏʀɪᴀʟ ᴏɴ ʏᴛ ʜᴏᴡ ᴛᴏ.\n- ᴘᴜᴛ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ ᴏꜰꜰ\n- ʀᴇᴍᴇᴍʙᴇʀ ᴛᴏ ʙʟᴀᴄᴋʟɪꜱᴛ ʙᴀᴅ ᴡᴏʀᴅꜱ\n\n__**ᴘɪᴄᴋɪɴɢ ɢᴀᴍᴇ ᴄᴀᴛᴇɢᴏʀʏ ᴀɴᴅ ᴛɪᴛʟᴇ**__\n- ᴏꜰ ʏᴏᴜʀ ᴏɴ ᴍᴏʙɪʟᴇ ᴛʜᴇɴ ʏᴏᴜʀ ʟɪᴠᴇ ɢᴀᴍᴇ ᴄᴀᴛᴇɢᴏʀʏ __ᴍᴜꜱᴛ__ ʙᴇ ꜱᴜʙᴡᴀʏ ꜱᴜʀꜰᴇʀꜱ ᴏʀ ᴄʟᴀꜱʜ ʀᴏʏᴀʟᴇ. ᴏɴ ᴘᴄ ɪᴛ ᴄᴀɴ ʙᴇ ʀᴏʙʟᴏx\n- ᴛɪᴛʟᴇ ᴄᴀɴ ʙᴇ ᴘʀᴏʙᴀʙʟʏ ᴀɴʏᴛʜɪɴɢ ʙᴜᴛ ʙᴇ ᴄᴀʀᴇꜰᴜʟ ᴡɪᴛʜ ᴡᴏʀᴅꜱ ʟɪᴋᴇ ꜰʀᴇᴇ ᴀɴᴅ ɢɪᴠᴇᴀᴡᴀʏ ꜱɪɴᴄᴇ ᴛɪᴋᴛᴏᴋ ᴅᴏᴇꜱɴᴛ ᴀʟᴡᴀʏꜱ ʟɪᴋᴇ ᴛʜᴇᴍ\n\n__**ʜᴏᴡ ʟᴏɴɢ ᴛᴏ ʙᴇ ʟɪᴠᴇ ꜰᴏʀ**__\n- ɴᴇᴠᴇʀ ʙᴇ ʟɪᴠᴇ ꜰᴏʀ ᴀʟᴏᴛ ᴏꜰ ʜᴏᴜʀꜱ ᴜɴʟᴇꜱꜱ ʏᴏᴜʀ ʟɪᴠᴇ ɪꜱ ꜱᴛᴀʙʟᴇ ᴀꜱꜰ. ʟɪᴋᴇ ʜᴀᴠɪɴɢ ᴀʙᴛ ʜᴜɴᴅʀᴇᴅ ᴠɪᴇᴡᴇʀꜱ ᴏʀ ᴍᴏʀᴇ ꜰᴏʀ ʜᴏᴜʀꜱ.\n- ᴡʜᴇɴ ʏᴏᴜ ꜱᴛᴀʀᴛ ʟɪᴠᴇ ʏᴏᴜ ꜱʜᴏᴜʟᴅ ᴅᴏ ɪᴛ ᴏɴʟʏ ꜰᴏʀ 20 ᴍɪɴꜱ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴇᴄᴋ ᴛᴏ ɪꜰ ᴇɴᴅ ᴛʜᴇ ʟɪᴠᴇ ᴏʀ ɴᴏᴛ.\n\n__**ʜᴇʀᴇꜱ ᴡʜᴇɴ ᴛᴏ ᴇɴᴅ ᴀɴᴅ ᴡʜᴇɴ ᴛᴏ ɴᴏᴛ ᴛᴏ**__\n- ɪꜰ ᴀꜰᴛᴇʀ 20 ᴍɪɴꜱ ʏᴏᴜʀ ᴠɪᴇᴡᴇʀꜱ ᴀʀᴇ ʙᴇʟᴏᴡ 10 ᴛʜᴇɴ ᴇɴᴅ ʏᴏᴜʀ ʟɪᴠᴇ\n- ɪꜰ ᴛʜᴇʏʀᴇ ᴀʙᴏᴠᴇ 10 ᴛʜᴇɴ ʜᴇʀᴇꜱ ꜱᴍᴀʟʟ ᴄʜᴀɴᴄᴇ ᴏꜰ ɢᴏɪɴɢ ᴠɪʀᴀʟ\n- ᴀʙᴏᴠᴇ 20 ᴠɪᴇᴡᴇʀꜱ = ɢᴏᴏᴅ ᴄʜᴀɴᴄᴇ ᴛᴏ ɢᴏ ᴠɪʀᴀʟ\n- ᴀʙᴏᴠᴇ 40 ᴠɪᴇᴡᴇʀꜱ ɪꜱ ᴠᴇʀʏ ɢᴏᴏᴅ ᴋᴇᴇᴘ ɪᴛ ᴜᴘ ᴜɴᴛɪʟ ᴛʜᴇʏ ꜱᴛᴀʀᴛ ᴅʀᴏᴘᴘɪɴɢ!!\n\n**__ᴘᴜᴍᴘɪɴɢ ᴍᴇᴛʜᴏᴅ__**\nᴛ����ɪꜱ ɪꜱ ᴀ ᴍᴇᴛʜᴏᴅ ᴛᴏ ᴛɪᴋᴛᴏᴋ ʟɪᴠᴇ ɢʀᴏᴡ ᴠɪᴇᴡᴇʀ��.\n- ʙᴀꜱɪᴄᴀʟʟʏ ᴊᴜꜱᴛ ɢᴏ ʟɪᴠᴇ ᴜɴᴛɪʟ ᴠɪᴇᴡᴇʀꜱ ɢʀᴏᴡ ᴀɴ�� ᴡʜᴇɴ ᴛʜᴡʏ ᴅʀᴏᴘ ʙʏ ᴀ ʙɪᴛ ᴊᴜꜱᴛ ᴇɴᴅ ᴛʜᴇ ʟɪᴠᴇ ɪᴍ���ᴇᴅɪᴀ���ᴇʟʟʏ > ᴀɴᴅ ᴛʜᴇɴ ꜱᴛᴀʀᴛ ʟɪᴠᴇ ᴀʟᴍᴏꜱ��� ɪᴍᴍᴇᴅɪᴀʟʟʏ ᴀɢᴀɪɴ ᴀɴᴅ ʀᴇᴘᴇᴀᴛ ᴛʜɪꜱ ᴜɴᴛɪʟ ʏᴏᴜ ʜᴀᴠᴇ ꜱᴛᴀ��ʟᴇ ᴀꜱ�� ʟɪᴠᴇ ᴡɪᴛʜ ʜᴜ��ᴅʀᴇ����ꜱ ᴏꜰ ��ɪᴇᴡᴇʀ���!!!\n\n**ʜᴇʀᴇꜱ ꜱᴏᴍᴇ ʀᴀɴᴅᴏᴍ ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅꜱ ɪ ꜰᴏᴜɴᴅ ʏᴏᴜ ᴄ��ɴ ᴡᴀ��ᴄʜ ᴛ�� ʟᴇᴀʀɴ, __���ᴜꜱ��__ ꜱᴛɪʟʟ ʀᴇᴀᴅ ꜰᴜʟʟ ᴛᴇxᴛ ᴏᴛʜᴇʀᴡɪꜱᴇ ʏᴏᴜ ᴡᴏɴᴛ ɢᴇᴛ ᴠɪᴇᴡᴇʀꜱ 😐**\nhttps://youtu.be/B-zZHryfuTs?si=XmrEatq2l3nyd0UP\nhttps://www.youtube.com/watch?v=RGaJMb7bRq8&t=1s"
       },
       {
         name: "ʙᴜʏɪɴɢ ꜱᴇʟʟɪɴɢ",
@@ -675,7 +675,7 @@ client.on("messageCreate", async (message) => {
       {
         name: "ʙꜱꜱ ᴍᴇᴛʜᴏᴅ",
         plainText: true,
-        body: "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━���━━━\n\nBSS VERY OP METHOD (TWO ACCOUNT WITH 18-20 HIVES PER DAY)\n\n1. Go to https://bssmvalues.com/\n\n2. Look for rich people, give them a good overpay and tell them to add you on Discord\n\n3. Once on Discord, say: \"Just join my private server to trade\" — then send the fake link\n\n4. Get their account and stuff\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nBSS TRADING SERVERS:\n\nhttps://discord.gg/swWaqafh4B\nhttps://discord.com/invite/bssm\nhttps://discord.com/invite/bsstrades-1213173775366094909\nhttps://discord.com/servers/bee-swarm-simulator-trading-server-1179032518444462090\nhttps://discord.com/invite/bee-swarm-simulator-values-1196133860245778462\nhttps://discord.com/invite/uaRUqUbuy7\nhttps://discord.com/invite/bee\nhttps://discord.com/invite/bss-helping-809858765141835786\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nEasy hits — don't sleep on this!\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        body: "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━�����━━━\n\nBSS VERY OP METHOD (TWO ACCOUNT WITH 18-20 HIVES PER DAY)\n\n1. Go to https://bssmvalues.com/\n\n2. Look for rich people, give them a good overpay and tell them to add you on Discord\n\n3. Once on Discord, say: \"Just join my private server to trade\" — then send the fake link\n\n4. Get their account and stuff\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nBSS TRADING SERVERS:\n\nhttps://discord.gg/swWaqafh4B\nhttps://discord.com/invite/bssm\nhttps://discord.com/invite/bsstrades-1213173775366094909\nhttps://discord.com/servers/bee-swarm-simulator-trading-server-1179032518444462090\nhttps://discord.com/invite/bee-swarm-simulator-values-1196133860245778462\nhttps://discord.com/invite/uaRUqUbuy7\nhttps://discord.com/invite/bee\nhttps://discord.com/invite/bss-helping-809858765141835786\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nEasy hits — don't sleep on this!\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
       },
       {
         name: "�������ʜ������������ᴏᴅ ᴍᴇᴛʜᴏᴅ",
@@ -1872,6 +1872,90 @@ client.on("messageCreate", async (message) => {
       await message.reply({
         content: "<:emoji_11:1506864561435967509> Failed to change bot avatar.",
       });
+    }
+    return;
+  }
+
+  // ── !setbotbanner ──
+  if (content === `${PREFIX}setbotbanner` || content.startsWith(`${PREFIX}setbotbanner `)) {
+    // Check if user has administrator permissions
+    if (!message.member.permissions.has(PermissionFlagsBits.Administrator)) {
+      await message.reply({
+        content: "<:emoji_11:1506864561435967509> You need administrator permissions to use this command.",
+      });
+      return;
+    }
+
+    try {
+      // Accept image from attachment OR from a URL provided as argument
+      let bannerSource = null;
+
+      if (message.attachments.size > 0) {
+        const attachment = message.attachments.first();
+
+        // Allow image/* and GIFs
+        const isImage = attachment.contentType && (
+          attachment.contentType.startsWith("image/") ||
+          attachment.contentType === "image/gif"
+        );
+
+        if (!isImage) {
+          await message.reply({
+            content: "<:emoji_11:1506864561435967509> Please attach a valid image file (PNG, JPG, GIF, WebP).",
+          });
+          return;
+        }
+
+        if (attachment.size > 10485760) {
+          await message.reply({
+            content: "<:emoji_11:1506864561435967509> Image is too large. Maximum size is 10MB.",
+          });
+          return;
+        }
+
+        bannerSource = attachment.url;
+      } else {
+        // Try to use a URL passed as argument: !setbotbanner <url>
+        const urlArg = content.slice(PREFIX.length + 12).trim();
+        if (urlArg) {
+          bannerSource = urlArg;
+        }
+      }
+
+      if (!bannerSource) {
+        await message.reply({
+          content: "<:emoji_11:1506864561435967509> Please attach an image or provide a URL. Usage: `!setbotbanner` (with image attached) or `!setbotbanner <url>`",
+        });
+        return;
+      }
+
+      // Fetch the image as a Buffer so Discord.js can handle it properly (supports GIFs too)
+      const fetch = (...args) => import("node-fetch").then(({ default: f }) => f(...args));
+      const res = await fetch(bannerSource);
+      if (!res.ok) {
+        await message.reply({
+          content: "<:emoji_11:1506864561435967509> Failed to fetch the image. Make sure the URL is accessible.",
+        });
+        return;
+      }
+      const buffer = Buffer.from(await res.arrayBuffer());
+
+      await client.user.setBanner(buffer);
+
+      await message.reply({
+        content: "<a:emoji_13:1508646379751342130> Bot banner (cover photo) changed successfully.",
+      });
+    } catch (err) {
+      console.error("[setbotbanner] error:", err.message);
+      if (err.message.includes("nitro") || err.message.includes("Nitro") || err.message.includes("50035")) {
+        await message.reply({
+          content: "<:emoji_11:1506864561435967509> Bot banners require the bot account to have Discord Nitro. This bot does not have Nitro.",
+        });
+      } else {
+        await message.reply({
+          content: `<:emoji_11:1506864561435967509> Failed to change bot banner: ${err.message}`,
+        });
+      }
     }
     return;
   }
