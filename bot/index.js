@@ -562,7 +562,7 @@ function buildServerRows(servers) {
 // ── Cross-process deduplication via /tmp lock files ─────────────────────────────
 // Because Railway may briefly run two instances during a deploy, we use exclusive
 // file creation in /tmp to ensure only ONE process handles each message/interaction.
-const fs = require("fs");
+// (fs is already required at the top of the file)
 
 function tryLock(id) {
   const file = `/tmp/bot_lock_${id}`;
