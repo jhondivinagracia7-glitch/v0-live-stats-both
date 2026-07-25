@@ -348,10 +348,10 @@ client.on("guildMemberAdd", async (member) => {
 
       const atlasEmbed = new EmbedBuilder()
         .setDescription(
-          "<:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794>\n" +
-          "<:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <a:emoji_22:1509804158490771457> <:emoji_19:1509035464714358794> welcome to @***Atlas*** !! — <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794>\n" +
-          "<:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> rules + sites +tutorials\n" +
-          "<:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794> <a:emoji_8:1506236357775720548> hf and say hi in chat ⊹"
+          "<:emoji_19:1509035464714358794>  <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794>\n" +
+          "<:emoji_19:1509035464714358794>  <:emoji_19:1509035464714358794> <a:emoji_22:1509804158490771457>  <:emoji_19:1509035464714358794>  welcome to @***Atlas*** !!   — <:emoji_19:1509035464714358794>              <:emoji_19:1509035464714358794>\n" +
+          "<:emoji_19:1509035464714358794>  <:emoji_19:1509035464714358794>  <:emoji_19:1509035464714358794>  <:emoji_19:1509035464714358794>     <:emoji_19:1509035464714358794>  [rules](https://discord.com/channels/1529819702145187840/1530088431508520980) `+` [sites](https://discord.com/channels/1529819702145187840/1530084235665346580) `+`[tutorials](https://discord.com/channels/1529819702145187840/1530367012159619262)\n" +
+          "<:emoji_19:1509035464714358794>  <:emoji_19:1509035464714358794>  <:emoji_19:1509035464714358794> <:emoji_19:1509035464714358794>     <:emoji_19:1509035464714358794>     <:emoji_19:1509035464714358794>     <:emoji_19:1509035464714358794> <a:emoji_8:1506236357775720548> hf and say hi in chat ⊹"
         )
         .setImage(WELCOME_GIF)
         .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
@@ -2839,7 +2839,7 @@ client.on("messageCreate", async (message) => {
     return;
   }
 
-  // ── Ticket button pressed: create ticket channel ──
+  // ── Ticket button pressed: create ticket channel ─���
   if (interaction.isButton() && interaction.customId === "ticket_create") {
     await interaction.deferReply({ ephemeral: true });
     
