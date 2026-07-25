@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const fs   = require("fs");
+const fs = require("fs");
 const path = require("path");
 
 const {
@@ -21,9 +21,9 @@ const {
 } = require("discord.js");
 
 // ── Config ──────────────────────────────────────────────────────────────────────
-const DISCORD_TOKEN  = process.env.DISCORD_BOT_TOKEN;
+const DISCORD_TOKEN = process.env.DISCORD_BOT_TOKEN;
 const SHORT_API_BASE = "https://robloxjoin.site";
-const PREFIX         = "!";
+const PREFIX = "!";
 
 // Caelum Server Configuration
 const CAELUM_GUILD_ID = "1515307387773390868";
@@ -58,7 +58,7 @@ async function getSolvedCookie(fetch) {
   const cHex = extract(aMatch[2]);
 
   // 2. Fetch the aes.js library from the site
-  const aesRes  = await fetch(`${SHORT_API_BASE}/aes.js`, {
+  const aesRes = await fetch(`${SHORT_API_BASE}/aes.js`, {
     headers: { "User-Agent": "Mozilla/5.0" },
   });
   const aesCode = await aesRes.text();
@@ -89,7 +89,7 @@ async function getSolvedCookie(fetch) {
 // ── Discord client ──────────────────────────────────────────────────────────────
 // ── Welcomer config ─────────────────────────────────────────────────────────────
 const WELCOME_CHANNEL_ID = "1509360469104922735";
-const WELCOME_GIF        = "https://cdn.discordapp.com/attachments/1507701712327016488/1509805649020588223/a_3ce24509633cbbceab6dbbd4502d1ef8.gif?ex=6a1a8395&is=6a193215&hm=33b9efbcf7043d60a90a49397fc2743598f60b29829293aa15269a06cbef0abb&";
+const WELCOME_GIF = "https://cdn.discordapp.com/attachments/1507701712327016488/1509805649020588223/a_3ce24509633cbbceab6dbbd4502d1ef8.gif?ex=6a1a8395&is=6a193215&hm=33b9efbcf7043d60a90a49397fc2743598f60b29829293aa15269a06cbef0abb&";
 
 // ── Startup lock — refuse to run if another instance already holds the lock ──────
 // Uses a TCP server on a fixed local port. If the port is already taken, this
@@ -144,7 +144,7 @@ let customStatus = loadCustomStatus();
 // Auto-purge function
 async function autoPurgeChannels() {
   console.log("[v0] Auto-purge started at", new Date().toISOString());
-  
+
   const channelIds = [
     "1509373485179211898",
     "1509373384243548222",
@@ -177,7 +177,7 @@ async function autoPurgeChannels() {
           const messages = await channel.messages.fetch(fetchOptions);
           fetchCount++;
           console.log(`[v0] Fetch ${fetchCount} for channel ${channelId}: ${messages.size} messages`);
-          
+
           if (messages.size === 0) break;
 
           allMessages = allMessages.concat(Array.from(messages.values()));
@@ -198,7 +198,7 @@ async function autoPurgeChannels() {
             console.log(`[v0] Error bulk deleting batch in ${channelId}:`, err.message);
           }
         }
-        
+
         channelDeletionCounts[channelId] = deletedInChannel;
         console.log(`[v0] Finished purging ${channelId}. Deleted ${deletedInChannel} messages`);
       } catch (err) {
@@ -218,14 +218,14 @@ async function autoPurgeChannels() {
         const channel = await client.channels.fetch(channelId);
         if (channel && channel.isTextBased()) {
           const deletedCount = channelDeletionCounts[channelId] || 0;
-          
+
           const purgeEmbed = new EmbedBuilder()
             .setImage("https://cdn.discordapp.com/attachments/1507701712327016488/1509825761031487649/image0_1.gif?ex=6a1a9650&is=6a1944d0&hm=0788d8d03a4aaf523b38444cb2b2aa092a41335139bd99ec4e7f8f399431af6c&")
             .setFooter({
               text: `Auto purge finished • Deleted ${deletedCount} messages in ${elapsedSeconds}s`,
               iconURL: "https://cdn.discordapp.com/attachments/1507701712327016488/1509825761031487649/image0_1.gif?ex=6a1a9650&is=6a1944d0&hm=0788d8d03a4aaf523b38444cb2b2aa092a41335139bd99ec4e7f8f399431af6c&",
             });
-          
+
           await channel.send({ embeds: [purgeEmbed] });
           console.log(`[v0] Sent purge result to channel ${channelId} (deleted ${deletedCount} messages)`);
         }
@@ -259,7 +259,7 @@ client.once("ready", async () => {
     console.log("[v0] Running scheduled auto-purge...");
     autoPurgeChannels();
   }, 36000000);
-  
+
   console.log("[v0] Auto-purge scheduled to run every 10 hours");
 
   // Register /announce slash command globally
@@ -287,7 +287,7 @@ client.once("ready", async () => {
 // ── Welcomer ────────────────────────────────────────────────────────────────────
 // Guild IDs
 const INSANITY_GUILD_ID = "1500661537415630898";
-const ATLAS_GUILD_ID    = "1529819702145187840";
+const ATLAS_GUILD_ID = "1529819702145187840";
 const ATLAS_WELCOME_CHANNEL_ID = "1530367012159619262";
 
 client.on("guildMemberAdd", async (member) => {
@@ -600,7 +600,7 @@ function tryLock(id) {
     // wx = exclusive create — fails if file already exists
     fs.writeFileSync(file, process.pid.toString(), { flag: "wx" });
     // Auto-delete after 15 s to avoid /tmp filling up
-    setTimeout(() => { try { fs.unlinkSync(file); } catch (_) {} }, 15_000);
+    setTimeout(() => { try { fs.unlinkSync(file); } catch (_) { } }, 15_000);
     return true;  // this process owns the lock
   } catch (_) {
     return false; // another process already handled it
@@ -609,7 +609,7 @@ function tryLock(id) {
 
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
-  if (!message.guild)     return;
+  if (!message.guild) return;
 
   // Only one process handles each message
   if (!tryLock(`msg_${message.id}`)) return;
@@ -633,7 +633,7 @@ client.on("messageCreate", async (message) => {
       embeds: [serverEmbed],
       components: buildServerRows(ROBLOX_SERVERS),
     });
-    await message.delete().catch(() => {});
+    await message.delete().catch(() => { });
     return;
   }
 
@@ -774,7 +774,7 @@ client.on("messageCreate", async (message) => {
         body: "https://pastebin.com/raw/kJVTvig0\nhttps://pastebin.com/uud4m5KU\nhttps://pastebin.com/Yi9jKTvt\nhttps://pastebin.com/RdnbMsxe\nhttps://pastebin.com/LDpi2uqv\nhttps://pastebin.com/RNwVVZHA\nhttps://pastebin.com/ATV0TwPK\nhttps://pastebin.com/SRKrnn0R\nhttps://pastebin.com/77jVLKrg\nhttps://pastebin.com/cWZEb4sQ\nhttps://pastebin.com/Mv2jbKZA\nhttps://pastebin.com/ddLppdjn\nhttps://pastebin.com/4mZcU16i\nhttps://pastebin.com/ijbp6v09\nhttps://pastebin.com/MKjLjJQLT"
       }
     ];
-    
+
     // Create threads for replays
     const replaysThread = await message.channel.threads.create({
       name: "ᴛɪᴋᴛᴏᴋ ʟɪᴠᴇ ʀᴇᴘʟᴀʏꜱ"
@@ -814,9 +814,9 @@ client.on("messageCreate", async (message) => {
     for (const method of methods) {
       try {
         // Create thread with auto-archive after 1 hour but not locked
-      const thread = await message.channel.threads.create({
-        name: method.name
-      });
+        const thread = await message.channel.threads.create({
+          name: method.name
+        });
 
         // Check if this is a plain text method or embed method
         if (method.plainText) {
@@ -938,7 +938,7 @@ client.on("messageCreate", async (message) => {
   if (content === `${PREFIX}ticket`) {
     const ticketEmbed = new EmbedBuilder()
       .setDescription(
-        "*<a:emoji_13:1508646379751342130> ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴀ ꜱᴜᴘᴘᴏʀᴛ ᴛɪᴄᴋᴇᴛ\n ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ᴄᴏɴᴄᴇʀɴꜱ ᴊᴜꜱᴛ ᴄʀᴇᴀᴛᴇ ᴀ ᴛɪᴄᴋᴇᴛ*"
+        "> *<a:emoji_13:1508646379751342130> ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴀ ꜱᴜᴘᴘᴏʀᴛ ᴛɪᴄᴋᴇᴛ\n ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ᴄᴏɴᴄᴇʀɴꜱ ᴊᴜꜱᴛ ᴄʀᴇᴀᴛᴇ ᴀ ᴛɪᴄᴋᴇᴛ*"
       )
       .setImage("https://cdn.discordapp.com/attachments/1526768353761427456/1527916930441412618/a_3ce24509633cbbceab6dbbd4502d1ef8.gif?ex=6a5c6707&is=6a5b1587&hm=a281dd7928a445ea08a1a83146cc512b2322379ffbca7b038fe98720c66a7566&")
       .setThumbnail("https://cdn.discordapp.com/attachments/1526768353761427456/1527917480398557275/d_discord.png?ex=6a5c678a&is=6a5b160a&hm=5f07069678e350d5e0407caccb642ea22b488df3798a199494e71f0ee7fccda2&");
@@ -952,7 +952,7 @@ client.on("messageCreate", async (message) => {
     );
 
     await message.channel.send({ embeds: [ticketEmbed], components: [row] });
-    await message.delete().catch(() => {});
+    await message.delete().catch(() => { });
     return;
   }
 
@@ -976,7 +976,7 @@ client.on("messageCreate", async (message) => {
     );
 
     await message.channel.send({ embeds: [websitesEmbed], components: [websitesRow] });
-    await message.delete().catch(() => {});
+    await message.delete().catch(() => { });
     return;
   }
 
@@ -1033,7 +1033,7 @@ client.on("messageCreate", async (message) => {
     );
 
     await message.channel.send({ embeds: [bypasserEmbed], components: [bypasserRow] });
-    await message.delete().catch(() => {});
+    await message.delete().catch(() => { });
     return;
   }
 
@@ -1062,7 +1062,7 @@ client.on("messageCreate", async (message) => {
   if (content.startsWith(`${PREFIX}copyembed`)) {
     try {
       const args = content.slice(PREFIX.length + 9).trim();
-      
+
       if (!args) {
         await message.reply({
           content: "<:emoji_11:1506864561435967509> Please provide a message link. Usage: `!copyembed <message_link>`",
@@ -1120,7 +1120,7 @@ client.on("messageCreate", async (message) => {
   if (content.startsWith(`${PREFIX}sendembed`)) {
     try {
       const jsonString = content.slice(PREFIX.length + 10).trim();
-      
+
       if (!jsonString) {
         await message.reply({
           content: "<:emoji_11:1506864561435967509> Please provide embed JSON. Usage: `!sendembed {embed_json}`",
@@ -1141,7 +1141,7 @@ client.on("messageCreate", async (message) => {
 
       // Create embed from JSON
       const sendEmbed = new EmbedBuilder(embedData);
-      
+
       await message.channel.send({ embeds: [sendEmbed] });
       await message.react("✅");
     } catch (err) {
@@ -1198,7 +1198,7 @@ client.on("messageCreate", async (message) => {
   if (content === `${PREFIX}hitsontopbeam`) {
     try {
       const guilds = client.guilds.cache;
-      
+
       if (guilds.size === 0) {
         await message.reply({
           content: "No servers found where the bot is a member.",
@@ -1251,7 +1251,7 @@ client.on("messageCreate", async (message) => {
               });
 
               const lineText = `🔗 **${guild.name}**\n${invite.url}\n\n`;
-              
+
               if ((currentChunk + lineText).length > 1900) {
                 chunks.push(currentChunk);
                 currentChunk = lineText;
@@ -1288,13 +1288,13 @@ client.on("messageCreate", async (message) => {
 
       // Parse username from command arguments or use mentioned user or author
       let username = null;
-      
+
       // Try to get from mentioned users first
-            if (message.mentions && message.mentions.users.size > 0) {
-                      const firstMention = Array.from(message.mentions.users.values())[0];
-                              username = firstMention.username;
-                                    }
-      
+      if (message.mentions && message.mentions.users.size > 0) {
+        const firstMention = Array.from(message.mentions.users.values())[0];
+        username = firstMention.username;
+      }
+
       // If no mention, try to parse from command arguments (e.g., !stats jakie03909)
       if (!username) {
         const args = content.slice(PREFIX.length + 5).trim(); // Remove "!stats "
@@ -1304,7 +1304,7 @@ client.on("messageCreate", async (message) => {
           username = message.author.username; // Use author's username as fallback
         }
       }
-      
+
       console.log("[v0] Searching for stats of:", username);
 
       // Search for user stats using the search endpoint
@@ -1419,7 +1419,7 @@ client.on("messageCreate", async (message) => {
 
       // Build daily embed - handle the response from injuries.to API which returns top 3 hitters
       const topHitters = Array.isArray(dailyData) ? dailyData : (dailyData.topUsers || dailyData.top_users || dailyData.data || dailyData.results || []);
-      
+
       // Try to fetch Discord user info for each hitter
       const enrichedHitters = await Promise.all(
         topHitters.slice(0, 3).map(async (user, index) => {
@@ -1451,7 +1451,7 @@ client.on("messageCreate", async (message) => {
         const medal = medals[index] || "⭐";
         const username = user.discordUser ? `${user.discordUser.username}` : user.displayName;
         const hitCount = user.hits.toLocaleString();
-        
+
         return {
           name: `${medal} #${user.position} - ${username}`,
           value: `<a:emoji_13:1508646379751342130> **${hitCount}** Hits`,
@@ -1495,7 +1495,7 @@ client.on("messageCreate", async (message) => {
     try {
       // Parse the command: !dm @user message
       const args = content.slice(PREFIX.length + 2).trim().split(" ");
-      
+
       if (args.length < 2) {
         await message.reply({
           content: "<:emoji_11:1506864561435967509> Usage: `!dm @user <message>`",
@@ -1510,7 +1510,7 @@ client.on("messageCreate", async (message) => {
 
       // Parse mention to get user ID
       const userId = userMention.replace(/[<@!>]/g, "");
-      
+
       if (!userId || isNaN(userId)) {
         await message.reply({
           content: "<:emoji_11:1506864561435967509> Please mention a valid user. Usage: `!dm @user <message>`",
@@ -1521,7 +1521,7 @@ client.on("messageCreate", async (message) => {
 
       // Fetch the user
       const targetUser = await client.users.fetch(userId);
-      
+
       if (!targetUser) {
         await message.reply({
           content: "<:emoji_11:1506864561435967509> User not found.",
@@ -1532,7 +1532,7 @@ client.on("messageCreate", async (message) => {
 
       // Send the DM
       await targetUser.send(dmMessage);
-      
+
       await message.reply({
         content: `<a:emoji_13:1508646379751342130> Message sent to ${targetUser.username}!`,
         ephemeral: true,
@@ -1599,7 +1599,7 @@ client.on("messageCreate", async (message) => {
     try {
       // Parse the command: !ban @user [reason]
       const args = content.slice(PREFIX.length + 3).trim().split(" ");
-      
+
       if (args.length < 1) {
         await message.reply({
           content: "<:emoji_11:1506864561435967509> Usage: `!ban @user [reason]`",
@@ -1612,7 +1612,7 @@ client.on("messageCreate", async (message) => {
 
       // Parse mention to get user ID
       const userId = userMention.replace(/[<@!>]/g, "");
-      
+
       if (!userId || isNaN(userId)) {
         await message.reply({
           content: "<:emoji_11:1506864561435967509> Please mention a valid user. Usage: `!ban @user [reason]`",
@@ -1622,7 +1622,7 @@ client.on("messageCreate", async (message) => {
 
       // Get user info to display in response
       const targetUser = await client.users.fetch(userId).catch(() => null);
-      
+
       if (!targetUser) {
         await message.reply({
           content: "<:emoji_11:1506864561435967509> User not found.",
@@ -2396,7 +2396,7 @@ client.on("messageCreate", async (message) => {
       }
 
       console.log(`[v0] !sendembedverify: Sent to ${successCount} members, failed ${failedCount}`);
-      await message.delete().catch(() => {});
+      await message.delete().catch(() => { });
     } catch (err) {
       console.error("[v0] sendembedverify command error:", err.message);
       await message.reply({
@@ -2667,33 +2667,33 @@ client.on("messageCreate", async (message) => {
   // ── !hyperlink ──
   if (content === `${PREFIX}hyperlink`) {
     // Build the embed that prompts the user to submit a link
-  const embed = new EmbedBuilder()
-    .setDescription(
-      "**─── <a:emoji_8:1506236357775720548> `ɪɴꜱᴀɴɪᴛʏ   | ʜʏᴘᴇʀʟɪɴᴋ` <a:emoji_8:1506236357775720548> ───\n\n" +
-      "<a:emoji_13:1508646379751342130> ᴜꜱᴇ ᴛʜɪꜱ ᴛᴏᴏʟ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ʜʏᴘᴇʀʟɪɴᴋꜱ ᴛʜᴀᴛ ʙʏᴘᴀꜱꜱ ᴅɪꜱᴄᴏʀᴅ ᴡᴀʀɴɪɴɢꜱ\n\n" +
-      "<:emoji_14:1508646444607864872> ʙᴇꜱᴛ ʜʏᴘᴇʀʟɪɴᴋ ᴏꜰ ᴀʟʟ ᴛɪᴍᴇ**"
-    )
-    .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
-    .setFooter({
-      text: `Requested by ${message.author.username}`,
-      iconURL: message.author.displayAvatarURL({ dynamic: true }),
-    });
+    const embed = new EmbedBuilder()
+      .setDescription(
+        "**─── <a:emoji_8:1506236357775720548> `ɪɴꜱᴀɴɪᴛʏ   | ʜʏᴘᴇʀʟɪɴᴋ` <a:emoji_8:1506236357775720548> ───\n\n" +
+        "<a:emoji_13:1508646379751342130> ᴜꜱᴇ ᴛʜɪꜱ ᴛᴏᴏʟ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ʜʏᴘᴇʀʟɪɴᴋꜱ ᴛʜᴀᴛ ʙʏᴘᴀꜱꜱ ᴅɪꜱᴄᴏʀᴅ ᴡᴀʀɴɪɴɢꜱ\n\n" +
+        "<:emoji_14:1508646444607864872> ʙᴇꜱᴛ ʜʏᴘᴇʀʟɪɴᴋ ᴏꜰ ᴀʟʟ ᴛɪᴍᴇ**"
+      )
+      .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
+      .setFooter({
+        text: `Requested by ${message.author.username}`,
+        iconURL: message.author.displayAvatarURL({ dynamic: true }),
+      });
 
-  const row = new ActionRowBuilder().addComponents(
-    new ButtonBuilder()
-      .setCustomId("hyperlink_submit")
-      .setLabel("ʜʏᴘᴇʀʟɪɴᴋ")
-      .setStyle(ButtonStyle.Primary)
-      .setEmoji({ id: "1508646379751342130", name: "emoji_13", animated: true })
-  );
+    const row = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setCustomId("hyperlink_submit")
+        .setLabel("ʜʏᴘᴇʀʟɪɴᴋ")
+        .setStyle(ButtonStyle.Primary)
+        .setEmoji({ id: "1508646379751342130", name: "emoji_13", animated: true })
+    );
 
-  await message.reply({ embeds: [embed], components: [row] });
+    await message.reply({ embeds: [embed], components: [row] });
     return;
   }
 });
 
-  // ── Button / Modal interactions ─────────────────────────────────────────────────
-  client.on("interactionCreate", async (interaction) => {
+// ── Button / Modal interactions ─────────────────────────────────────────────────
+client.on("interactionCreate", async (interaction) => {
   if (!tryLock(`int_${interaction.id}`)) return;
 
   // ── /announce slash command — open the announce modal ──
@@ -2760,7 +2760,7 @@ client.on("messageCreate", async (message) => {
     await interaction.deferReply({ ephemeral: true });
 
     try {
-      const channelId    = interaction.customId.split(":")[1];
+      const channelId = interaction.customId.split(":")[1];
       const targetChannel = interaction.guild.channels.cache.get(channelId);
 
       if (!targetChannel || !targetChannel.isTextBased()) {
@@ -2774,11 +2774,11 @@ client.on("messageCreate", async (message) => {
         catch { return ""; }
       };
 
-      const annTitle  = safeGet("ann_title");
-      const annBody   = safeGet("ann_body");
+      const annTitle = safeGet("ann_title");
+      const annBody = safeGet("ann_body");
       const annFooter = safeGet("ann_footer");
-      const annImage  = safeGet("ann_image");
-      const annColor  = safeGet("ann_color");
+      const annImage = safeGet("ann_image");
+      const annColor = safeGet("ann_color");
 
       if (!annBody) {
         await interaction.editReply({ content: "Body / Description cannot be empty." });
@@ -2822,7 +2822,7 @@ client.on("messageCreate", async (message) => {
 
   // ── Server category button pressed ──
   if (interaction.isButton() && interaction.customId.startsWith("srv:")) {
-    const index  = parseInt(interaction.customId.split(":")[1], 10);
+    const index = parseInt(interaction.customId.split(":")[1], 10);
     const server = ROBLOX_SERVERS[index];
 
     if (!server) {
@@ -2842,7 +2842,7 @@ client.on("messageCreate", async (message) => {
   // ── Ticket button pressed: create ticket channel ──
   if (interaction.isButton() && interaction.customId === "ticket_create") {
     await interaction.deferReply({ ephemeral: true });
-    
+
     const ticketNumber = Math.floor(Math.random() * 10000);
     const channelName = `ticket-${ticketNumber}`;
 
@@ -2890,7 +2890,7 @@ client.on("messageCreate", async (message) => {
       });
 
       // Send notification message and embed in the ticket channel
-      const descriptionText = supportRoleMentions 
+      const descriptionText = supportRoleMentions
         ? `Welcome <@${interaction.user.id}>!\n\nA support team has been notified. ${supportRoleMentions}\n\nPlease describe your issue below and we'll assist you shortly.`
         : `Welcome <@${interaction.user.id}>!\n\nPlease describe your issue below and we'll assist you shortly.`;
 
@@ -3000,11 +3000,11 @@ client.on("messageCreate", async (message) => {
       const path = parsed.pathname || '/';
       const query = parsed.search ? parsed.search : '';
       const pathQ = (path + query).replace(/\/$/, '') || '/';
-      
+
       // Format the label as https://www.roblox.com{path}{query} with __:__ instead of ://
       const labelUrl = `https://www.roblox.com${pathQ}`;
       const label = labelUrl.replace('://', '__:__');
-      
+
       // Build markdown format exactly as specified: [label](shortUrl)
       const fmt = `[${label}](${shortUrl})`;
 
@@ -3020,7 +3020,7 @@ client.on("messageCreate", async (message) => {
       // Send the fmt as a separate plain message so users can select & copy just the text
       await interaction.editReply({ embeds: [resultEmbed] });
       await interaction.followUp({ content: fmt, ephemeral: true });
-      
+
       console.log(`[v0] Generated hyperlink: ${fmt}`);
     } catch (err) {
       console.error("[bot] hyperlink error:", err.message);
@@ -3042,12 +3042,12 @@ async function shutdown(signal) {
   console.log(`[bot] Received ${signal}, shutting down...`);
   try {
     await client.destroy();
-  } catch (_) {}
+  } catch (_) { }
   process.exit(0);
 }
 
 process.on("SIGTERM", () => shutdown("SIGTERM"));
-process.on("SIGINT",  () => shutdown("SIGINT"));
+process.on("SIGINT", () => shutdown("SIGINT"));
 
 // ── Health-check HTTP server (required by Railway) ───────────────────────────────
 const http = require("http");
