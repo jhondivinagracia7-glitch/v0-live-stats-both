@@ -960,7 +960,7 @@ client.on("messageCreate", async (message) => {
   if (content === `${PREFIX}websites`) {
     const websitesEmbed = new EmbedBuilder()
       .setDescription(
-        "**─── <a:emoji_8:1506236357775720548> `ɪɴꜱᴀɴɪᴛʏ  | ꜱɪᴛᴇꜱ` <a:emoji_8:1506236357775720548> ───\n\n" +
+        "**───**<a:emoji_8:1506236357775720548>**`ɪɴꜱᴀɴɪᴛʏ | #1 ꜱᴇʀᴠᴇʀ` ───**\n\n" +
         "<a:emoji_24:1509923039327031367> 1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ\n\n" +
         "<:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
       )
