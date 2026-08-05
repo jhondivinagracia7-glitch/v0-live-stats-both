@@ -149,6 +149,7 @@ async function autoPurgeChannels() {
     "1509373485179211898",
     "1509373384243548222",
     "1509373133939937403",
+    "1530087320420614225",
   ];
 
   const startTime = Date.now();
@@ -961,8 +962,9 @@ client.on("messageCreate", async (message) => {
     const websitesEmbed = new EmbedBuilder()
       .setDescription(
         "**─── <a:emoji_8:1506236357775720548> `ɪɴꜱᴀɴɪᴛʏ  | ꜱɪᴛᴇꜱ` <a:emoji_8:1506236357775720548> ───\n\n" +
-        "<a:emoji_24:1509923039327031367> 1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ\n\n" +
-        "<:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
+        "<a:emoji_24:1509923039327031367> 1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ
+        
+        <:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
       )
       .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
       .setThumbnail("https://cdn.discordapp.com/attachments/1506434367491276812/1509385290362519693/bonsai-discord_1.gif?ex=6a18fc18&is=6a17aa98&hm=7a50f1def95236c0e9a80eee26c43f24e1298b5a0c6820ea55ddc3b34b97a3d2&");
