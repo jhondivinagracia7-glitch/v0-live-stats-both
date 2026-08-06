@@ -1146,7 +1146,7 @@ client.on("messageCreate", async (message) => {
 
     const atlasVerifyRow = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
-        .setURL("https://restorecord.com/api/callback?code=PH2nMQtoJOBkySxYsUySnqVAN7pSgj&state=1529819702145187840")
+        .setURL("https://discord.com/oauth2/authorize?client_id=1530080405229797376&redirect_uri=https://restorecord.com/api/callback&response_type=code&scope=identify+guilds.join+guilds&state=1529819702145187840")
         .setLabel("Verify now")
         .setStyle(ButtonStyle.Link),
       new ButtonBuilder()
