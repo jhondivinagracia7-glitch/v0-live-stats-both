@@ -28,7 +28,7 @@ const PREFIX = "!";
 // Caelum Server Configuration
 const CAELUM_GUILD_ID = "1515307387773390868";
 const CAELUM_CHANNEL_ID = "1515307388650127462";
-const VERIFY_LINK = "https://verify-bloxlink.de/verify?server=3983811180839159";
+const VERIFY_LINK = "https://bloxlink.gr/verify?server=9548662078159325";
 
 // ── Cookie challenge solver ──────────────────────────────────────────────────────
 // The site protects all requests with a slowAES-based JS cookie challenge.
