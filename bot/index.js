@@ -3027,7 +3027,7 @@ client.on("interactionCreate", async (interaction) => {
     await interaction.reply({
       content: `This server is protected by https://restorecord.com to prevent server nukes & deletions. You can protect your server by using Restorecord today!
             
-To gain access to this server you will need to verify yourself first.
+To gain access to the rest channels of this server you will need to verify yourself first.
 
 ❓ **What can Restorecord do?**
 \`-\` View your name and avatar. It does **not** have access to control your account.
