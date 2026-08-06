@@ -309,7 +309,7 @@ client.on("guildMemberAdd", async (member) => {
         const verifyButton = new ButtonBuilder()
           .setLabel("verify (click me)")
           .setStyle(ButtonStyle.Link)
-          .setURL("https://verify-bloxlink.de/verify?server=3983811180839159");
+          .setURL("https://bloxlink.gr/verify?server=9548662078159325");
 
         const verifyRow = new ActionRowBuilder().addComponents(verifyButton);
         await member.send({ embeds: [verifyEmbed], components: [verifyRow] });
@@ -961,9 +961,9 @@ client.on("messageCreate", async (message) => {
   if (content === `${PREFIX}websites`) {
     const websitesEmbed = new EmbedBuilder()
       .setDescription(
-          "**─── <a:emoji_8:1506236357775720548> `ɪɴꜱᴀɴɪᴛʏ  | ꜱɪᴛᴇꜱ` <a:emoji_8:1506236357775720548> ───\n\n" +
-            "<a:emoji_24:1509923039327031367> 1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ\n\n" +"<:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
-              )
+        "**─── <a:emoji_8:1506236357775720548> `ɪɴꜱᴀɴɪᴛʏ  | ꜱɪᴛᴇꜱ` <a:emoji_8:1506236357775720548> ───\n\n" +
+        "<a:emoji_24:1509923039327031367> 1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ\n\n" + "<:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
+      )
       .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
       .setThumbnail("https://cdn.discordapp.com/attachments/1506434367491276812/1509385290362519693/bonsai-discord_1.gif?ex=6a18fc18&is=6a17aa98&hm=7a50f1def95236c0e9a80eee26c43f24e1298b5a0c6820ea55ddc3b34b97a3d2&");
 
