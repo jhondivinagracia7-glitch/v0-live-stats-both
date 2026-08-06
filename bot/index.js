@@ -1136,6 +1136,30 @@ client.on("messageCreate", async (message) => {
     return;
   }
 
+  // ── !verify ──
+  if (content === `${PREFIX}verify`) {
+    const atlasVerifyEmbed = new EmbedBuilder()
+      .setTitle("🤖 Verification required")
+      .setDescription(
+        "To gain access to @𝘼𝙩𝙡𝙖𝙨 you need to prove you are a human by completing verification. Click the button below to get started!"
+      );
+
+    const atlasVerifyRow = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setURL("https://restorecord.com/api/callback?code=PH2nMQtoJOBkySxYsUySnqVAN7pSgj&state=1529819702145187840")
+        .setLabel("Verify now")
+        .setStyle(ButtonStyle.Link),
+      new ButtonBuilder()
+        .setCustomId("verify_why")
+        .setLabel("Why?")
+        .setStyle(ButtonStyle.Secondary)
+    );
+
+    await message.channel.send({ embeds: [atlasVerifyEmbed], components: [atlasVerifyRow] });
+    await message.delete().catch(() => { });
+    return;
+  }
+
   // ── !copyembed <message_link> ──
   if (content.startsWith(`${PREFIX}copyembed`)) {
     try {
@@ -2995,6 +3019,22 @@ client.on("interactionCreate", async (interaction) => {
         content: "Failed to create ticket. Please try again.",
       });
     }
+    return;
+  }
+
+  // ── Verify: Why? button ──
+  if (interaction.isButton() && interaction.customId === "verify_why") {
+    await interaction.reply({
+      content: `This server is protected by https://restorecord.com to prevent server nukes & deletions. You can protect your server by using Restorecord today!
+            
+To gain access to this server you will need to verify yourself first.
+
+❓ **What can Restorecord do?**
+\`-\` View your name and avatar. It does **not** have access to control your account.
+\`-\` View which servers you have joined
+\`-\` Add servers`,
+      ephemeral: true,
+    });
     return;
   }
 
