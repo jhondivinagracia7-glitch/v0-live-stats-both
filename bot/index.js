@@ -141,6 +141,11 @@ function saveCustomStatus(data) {
 // Load persisted status on startup (null = use default "Watching members join")
 let customStatus = loadCustomStatus();
 
+// ── Shop ticket auto-reply tracker ───────────────────────────────────────────
+// Tracks shop-ticket channel IDs that have already received the auto-reply so
+// the bot only fires it once per channel (on the buyer's very first message).
+const shopTicketAutoReplied = new Set();
+
 // Auto-purge function
 async function autoPurgeChannels() {
   console.log("[v0] Auto-purge started at", new Date().toISOString());
@@ -638,9 +643,36 @@ client.on("messageCreate", async (message) => {
     return;
   }
 
+  // ── Auto-reply: first buyer message in shop-ticket channels ──
+  if (
+    message.channel.name &&
+    message.channel.name.startsWith("shop-ticket-") &&
+    !shopTicketAutoReplied.has(message.channel.id)
+  ) {
+    shopTicketAutoReplied.add(message.channel.id);
+    const autoReplyEmbed = new EmbedBuilder()
+      .setTitle("<a:emoji_13:1508646379751342130> ᴡʜᴀᴛ ᴡᴏᴜʟᴅ ʏᴏᴜ ʟɪᴋᴇ ᴛᴏ ᴘᴜʀᴄʜᴀꜱᴇ?")
+      .setDescription(
+        "ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴏᴘᴇɴɪɴɢ ᴀ ꜱᴀʟᴇꜱ ᴛɪᴄᴋᴇᴛ! ᴘʟᴇᴀꜱᴇ ʟᴇᴛ ᴜꜱ ᴋɴᴏᴡ ᴡʜɪᴄʜ ᴏꜰ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʙᴜʏ:\n\n" +
+        "**`1`** — <:emoji_14:1508646444607864872> **ᴀᴜᴛᴏʜᴀʀ**\n" +
+        "**`2`** — <:emoji_14:1508646444607864872> **ɪᴘ ʟᴏᴄᴋ ʙʏᴘᴀꜱꜱ / ʀᴇꜰʀᴇꜱʜᴇʀ**\n" +
+        "**`3`** — <:emoji_14:1508646444607864872> **ᴀɢᴇ ʙʏᴘᴀꜱꜱᴇʀ**\n" +
+        "**`4`** — <:emoji_14:1508646444607864872> **ᴀᴄᴄᴏᴜɴᴛ ᴄʜᴇᴄᴋᴇʀ**\n" +
+        "**`5`** — <:emoji_14:1508646444607864872> **ᴡᴇʙʜᴏᴏᴋ ꜱᴇɴᴅᴇʀ**\n" +
+        "**`6`** — <:emoji_14:1508646444607864872> **ᴄᴏᴏᴋɪᴇ ᴄʟᴇᴀɴᴇʀ**\n" +
+        "**`7`** — <:emoji_14:1508646444607864872> **ʜʏᴘᴇʀʟɪɴᴋ ꜱᴇɴᴅᴇʀ**\n\n" +
+        "*ꜱɪᴍᴘʟʏ ʀᴇᴘʟʏ ᴡɪᴛʜ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴏʀ ɴᴀᴍᴇ ᴏꜰ ᴛʜᴇ ᴘʀᴏᴅᴜᴄᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴀɴᴅ ᴀ ꜱᴛᴀꜰꜰ ᴍᴇᴍʙᴇʀ ᴡɪʟʟ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ ꜱʜᴏʀᴛʟʏ!*"
+      )
+      .setColor("#2f3136")
+      .setFooter({
+        text: "ᴘʀɪᴄᴇꜱ & ɪɴꜱᴛʀᴜᴄᴛɪᴏɴꜱ ᴡɪʟʟ ʙᴇ ꜱᴇɴᴛ ʙʏ ꜱᴜᴘᴘᴏʀᴛ",
+      });
+    await message.channel.send({ embeds: [autoReplyEmbed] });
+  }
+
   // ── !delete ──
   if (content === `${PREFIX}delete`) {
-    if (!message.channel.name.startsWith("ticket-")) {
+    if (!message.channel.name.startsWith("ticket-") && !message.channel.name.startsWith("shop-ticket-")) {
       await message.reply({ content: "This command can only be used in ticket channels.", ephemeral: true });
       return;
     }
@@ -953,6 +985,52 @@ client.on("messageCreate", async (message) => {
     );
 
     await message.channel.send({ embeds: [ticketEmbed], components: [row] });
+    await message.delete().catch(() => { });
+    return;
+  }
+
+  // ── !shop ──
+  if (content === `${PREFIX}shop`) {
+    const shopEmbed = new EmbedBuilder()
+      .setTitle("<a:emoji_8:1506236357775720548> ꜱʜᴏᴘ | ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʀᴏᴅᴜᴄᴛꜱ <a:emoji_8:1506236357775720548>")
+      .setDescription(
+        "**ʙʀᴏᴡꜱᴇ ᴏᴜʀ ꜱᴇʟᴇᴄᴛɪᴏɴ ᴏꜰ ᴘʀᴇᴍɪᴜᴍ ᴛᴏᴏʟꜱ & ꜱᴇʀᴠɪᴄᴇꜱ ʙᴇʟᴏᴡ.**\n\n" +
+        "<:emoji_14:1508646444607864872> **ᴀᴜᴛᴏʜᴀʀ**\n" +
+        "> ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʜᴀʀᴠᴇꜱᴛɪɴɢ ᴛᴏᴏʟ ᴛᴏ ꜱᴛʀᴇᴀᴍʟɪɴᴇ ʏᴏᴜʀ ᴡᴏʀᴋꜰʟᴏᴡ.\n\n" +
+        "<:emoji_14:1508646444607864872> **ɪᴘ ʟᴏᴄᴋ ʙʏᴘᴀꜱꜱ / ʀᴇꜰʀᴇꜱʜᴇʀ**\n" +
+        "> ʙʏᴘᴀꜱꜱ ᴀɴᴅ ʀᴇꜰʀᴇꜱʜ ɪᴘ ʟᴏᴄᴋꜱ ᴡɪᴛʜ ᴇᴀꜱᴇ.\n\n" +
+        "<:emoji_14:1508646444607864872> **ᴀɢᴇ ʙʏᴘᴀꜱꜱᴇʀ**\n" +
+        "> ʙʏᴘᴀꜱꜱ ᴀɢᴇ ʀᴇꜱᴛʀɪᴄᴛɪᴏɴꜱ ɪɴꜱᴛᴀɴᴛʟʏ.\n\n" +
+        "<:emoji_14:1508646444607864872> **ᴀᴄᴄᴏᴜɴᴛ ᴄʜᴇᴄᴋᴇʀ**\n" +
+        "> ᴄʜᴇᴄᴋ ᴀᴄᴄᴏᴜɴᴛ ᴠᴀʟɪᴅɪᴛʏ & ꜱᴛᴀᴛᴜꜱ ɪɴ ʙᴜʟᴋ.\n\n" +
+        "<:emoji_14:1508646444607864872> **ᴡᴇʙʜᴏᴏᴋ ꜱᴇɴᴅᴇʀ**\n" +
+        "> ꜱᴇɴᴅ ᴄᴜꜱᴛᴏᴍ ᴡᴇʙʜᴏᴏᴋꜱ ᴛᴏ ᴀɴʏ ᴅɪꜱᴄᴏʀᴅ ᴄʜᴀɴɴᴇʟ.\n\n" +
+        "<:emoji_14:1508646444607864872> **ᴄᴏᴏᴋɪᴇ ᴄʟᴇᴀɴᴇʀ**\n" +
+        "> ᴄʟᴇᴀɴ & ꜱᴛʀɪᴘ ᴄᴏᴏᴋɪᴇꜱ ɪɴ ᴏɴᴇ ᴄʟɪᴄᴋ.\n\n" +
+        "<:emoji_14:1508646444607864872> **ʜʏᴘᴇʀʟɪɴᴋ ꜱᴇɴᴅᴇʀ**\n" +
+        "> ꜱᴇɴᴅ ʜɪᴅᴅᴇɴ / ᴍᴀꜱᴋᴇᴅ ʟɪɴᴋꜱ ᴛʜᴀᴛ ʙʏᴘᴀꜱꜱ ᴅɪꜱᴄᴏʀᴅ ꜰʟᴀɢꜱ.\n\n" +
+        "──────────────────────────\n" +
+        "*<a:emoji_13:1508646379751342130> ᴄʟɪᴄᴋ **Purchase** ʙᴇʟᴏᴡ ᴛᴏ ᴏᴘᴇɴ ᴀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴄᴏɴꜰɪʀᴍ ʏᴏᴜʀ ᴏʀᴅᴇʀ.*"
+      )
+      .setImage("https://cdn.discordapp.com/attachments/1507701712327016488/1509827919705280512/a_83bbc624f3ac843c95b3387cdb7f4106.gif?ex=6a1a9853&is=6a1946d3&hm=9ae824ac32110fa5432cca99c88ee601537be2745b61ec15ac9aed54f83b0a8a&")
+      .setThumbnail("https://cdn.discordapp.com/attachments/1506434367491276812/1509385290362519693/bonsai-discord_1.gif?ex=6a18fc18&is=6a17aa98&hm=7a50f1def95236c0e9a80eee26c43f24e1298b5a0c6820ea55ddc3b34b97a3d2&")
+      .setColor("#2f3136")
+      .setFooter({ text: "ᴀʟʟ ꜱᴀʟᴇꜱ ᴀʀᴇ ꜰɪɴᴀʟ • ꜱᴛᴀꜰꜰ ᴡɪʟʟ ᴀꜱꜱɪꜱᴛ ʏᴏᴜ ɪɴ ʏᴏᴜʀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀɴɴᴇʟ" });
+
+    const shopRow = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setCustomId("shop_ticket_create")
+        .setLabel("ᴘᴜʀᴄʜᴀꜱᴇ")
+        .setStyle(ButtonStyle.Success)
+        .setEmoji({ id: "1508646444607864872", name: "emoji_14" }),
+      new ButtonBuilder()
+        .setCustomId("shop_list_products")
+        .setLabel("ᴠɪᴇᴡ ᴘʀᴏᴅᴜᴄᴛꜱ")
+        .setStyle(ButtonStyle.Secondary)
+        .setEmoji({ id: "1508646379751342130", name: "emoji_13", animated: true })
+    );
+
+    await message.channel.send({ embeds: [shopEmbed], components: [shopRow] });
     await message.delete().catch(() => { });
     return;
   }
@@ -2916,6 +2994,133 @@ client.on("interactionCreate", async (interaction) => {
       await interaction.editReply({
         content: "Failed to create ticket. Please try again.",
       });
+    }
+    return;
+  }
+
+  // ── Shop: view products list (ephemeral) ──
+  if (interaction.isButton() && interaction.customId === "shop_list_products") {
+    const listEmbed = new EmbedBuilder()
+      .setTitle("<a:emoji_8:1506236357775720548> ᴘʀᴏᴅᴜᴄᴛ ʟɪꜱᴛ")
+      .setDescription(
+        "<:emoji_14:1508646444607864872> **ᴀᴜᴛᴏʜᴀʀ** — ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʜᴀʀᴠᴇꜱᴛɪɴɢ ᴛᴏᴏʟ\n" +
+        "<:emoji_14:1508646444607864872> **ɪᴘ ʟᴏᴄᴋ ʙʏᴘᴀꜱꜱ / ʀᴇꜰʀᴇꜱʜᴇʀ** — ʙʏᴘᴀꜱꜱ & ʀᴇꜰʀᴇꜱʜ ɪᴘ ʟᴏᴄᴋꜱ\n" +
+        "<:emoji_14:1508646444607864872> **ᴀɢᴇ ʙʏᴘᴀꜱꜱᴇʀ** — ʙʏᴘᴀꜱꜱ ᴀɢᴇ ʀᴇꜱᴛʀɪᴄᴛɪᴏɴꜱ ɪɴꜱᴛᴀɴᴛʟʏ\n" +
+        "<:emoji_14:1508646444607864872> **ᴀᴄᴄᴏᴜɴᴛ ᴄʜᴇᴄᴋᴇʀ** — ʙᴜʟᴋ ᴀᴄᴄᴏᴜɴᴛ ᴠᴀʟɪᴅᴀᴛɪᴏɴ\n" +
+        "<:emoji_14:1508646444607864872> **ᴡᴇʙʜᴏᴏᴋ ꜱᴇɴᴅᴇʀ** — ꜱᴇɴᴅ ᴄᴜꜱᴛᴏᴍ ᴡᴇʙʜᴏᴏᴋꜱ\n" +
+        "<:emoji_14:1508646444607864872> **ᴄᴏᴏᴋɪᴇ ᴄʟᴇᴀɴᴇʀ** — ᴄʟᴇᴀɴ ᴄᴏᴏᴋɪᴇꜱ ɪɴ ᴏɴᴇ ᴄʟɪᴄᴋ\n" +
+        "<:emoji_14:1508646444607864872> **ʜʏᴘᴇʀʟɪɴᴋ ꜱᴇɴᴅᴇʀ** — ᴍᴀꜱᴋᴇᴅ ʟɪɴᴋꜱ ᴛʜᴀᴛ ʙʏᴘᴀꜱꜱ ꜰʟᴀɢꜱ\n\n" +
+        "*ᴄʟɪᴄᴋ **Purchase** ᴛᴏ ᴏᴘᴇɴ ᴀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴘʟᴀᴄᴇ ʏᴏᴜʀ ᴏʀᴅᴇʀ.*"
+      )
+      .setColor("#2f3136");
+    await interaction.reply({ embeds: [listEmbed], ephemeral: true });
+    return;
+  }
+
+  // ── Shop ticket button pressed: create private shop-ticket channel ──
+  if (interaction.isButton() && interaction.customId === "shop_ticket_create") {
+    await interaction.deferReply({ ephemeral: true });
+
+    const ticketNumber = Math.floor(Math.random() * 10000);
+    const channelName = `shop-ticket-${ticketNumber}`;
+
+    try {
+      // Build permission overwrites
+      const permissionOverwrites = [
+        {
+          id: interaction.guild.roles.everyone.id,
+          deny: ["ViewChannel"],
+        },
+        {
+          id: client.user.id,
+          allow: ["ViewChannel", "SendMessages", "ReadMessageHistory", "ManageMessages"],
+        },
+        {
+          id: interaction.user.id,
+          allow: ["ViewChannel", "SendMessages", "ReadMessageHistory"],
+        },
+      ];
+
+      // Give all admin roles access
+      const allRoles = await interaction.guild.roles.fetch();
+      const adminRoles = allRoles.filter(
+        (role) =>
+          role.permissions.has(PermissionFlagsBits.Administrator) &&
+          !role.managed &&
+          role.id !== interaction.guild.roles.everyone.id
+      );
+
+      let staffMentions = "";
+      for (const [roleId] of adminRoles) {
+        permissionOverwrites.push({
+          id: roleId,
+          allow: ["ViewChannel", "SendMessages", "ReadMessageHistory"],
+        });
+        staffMentions += `<@&${roleId}> `;
+      }
+
+      // Create the private channel
+      const shopChannel = await interaction.guild.channels.create({
+        name: channelName,
+        type: ChannelType.GuildText,
+        permissionOverwrites: permissionOverwrites,
+      });
+
+      // Send the shop embed in the new private channel
+      const shopWelcomeEmbed = new EmbedBuilder()
+        .setTitle("<a:emoji_8:1506236357775720548> ꜱᴀʟᴇꜱ ᴛɪᴄᴋᴇᴛ ᴏᴘᴇɴᴇᴅ")
+        .setDescription(
+          `ʜᴇʏ <@${interaction.user.id}>! ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴘᴜʀᴄʜᴀꜱᴇ ᴄʜᴀɴɴᴇʟ.${staffMentions ? `\n\nꜱᴛᴀꜰꜰ ɴᴏᴛɪꜰɪᴇᴅ: ${staffMentions}` : ""}\n\n` +
+          "**ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʀᴏᴅᴜᴄᴛꜱ:**\n\n" +
+          "**`1`** <:emoji_14:1508646444607864872> **ᴀᴜᴛᴏʜᴀʀ**\n" +
+          "**`2`** <:emoji_14:1508646444607864872> **ɪᴘ ʟᴏᴄᴋ ʙʏᴘᴀꜱꜱ / ʀᴇꜰʀᴇꜱʜᴇʀ**\n" +
+          "**`3`** <:emoji_14:1508646444607864872> **ᴀɢᴇ ʙʏᴘᴀꜱꜱᴇʀ**\n" +
+          "**`4`** <:emoji_14:1508646444607864872> **ᴀᴄᴄᴏᴜɴᴛ ᴄʜᴇᴄᴋᴇʀ**\n" +
+          "**`5`** <:emoji_14:1508646444607864872> **ᴡᴇʙʜᴏᴏᴋ ꜱᴇɴᴅᴇʀ**\n" +
+          "**`6`** <:emoji_14:1508646444607864872> **ᴄᴏᴏᴋɪᴇ ᴄʟᴇᴀɴᴇʀ**\n" +
+          "**`7`** <:emoji_14:1508646444607864872> **ʜʏᴘᴇʀʟɪɴᴋ ꜱᴇɴᴅᴇʀ**\n\n" +
+          "*ᴛʏᴘᴇ ᴀɴʏᴛʜɪɴɢ ᴛᴏ ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ — ᴛʜᴇ ʙᴏᴛ ᴡɪʟʟ ɢᴜɪᴅᴇ ʏᴏᴜ ᴏɴ ʏᴏᴜʀ ɴᴇxᴛ ꜱᴛᴇᴘ!*"
+        )
+        .setColor("#2f3136")
+        .setFooter({ text: `ᴛɪᴄᴋᴇᴛ ɪᴅ: ${ticketNumber}` });
+
+      const closeRow = new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+          .setCustomId("shop_close_ticket")
+          .setLabel("ᴄʟᴏꜱᴇ ᴛɪᴄᴋᴇᴛ")
+          .setStyle(ButtonStyle.Danger)
+          .setEmoji({ id: "1506864561435967509", name: "emoji_11" })
+      );
+
+      await shopChannel.send({
+        content: staffMentions ? `${staffMentions}` : undefined,
+        embeds: [shopWelcomeEmbed],
+        components: [closeRow],
+      });
+
+      await interaction.editReply({
+        content: `<a:emoji_13:1508646379751342130> ʏᴏᴜʀ ᴘᴜʀᴄʜᴀꜱᴇ ᴄʜᴀɴɴᴇʟ ʜᴀꜱ ʙᴇᴇɴ ᴄʀᴇᴀᴛᴇᴅ: <#${shopChannel.id}>`,
+      });
+    } catch (err) {
+      console.error(`[shop-ticket] Error creating shop ticket:`, err.message);
+      await interaction.editReply({
+        content: "Failed to create purchase channel. Please try again.",
+      });
+    }
+    return;
+  }
+
+  // ── Shop close ticket button ──
+  if (interaction.isButton() && interaction.customId === "shop_close_ticket") {
+    if (!interaction.channel.name.startsWith("shop-ticket-")) {
+      await interaction.reply({ content: "This can only be used in a shop ticket channel.", ephemeral: true });
+      return;
+    }
+    try {
+      await interaction.reply({ content: "<:emoji_11:1506864561435967509> ᴄʟᴏꜱɪɴɢ ᴛɪᴄᴋᴇᴛ..." });
+      await interaction.channel.delete();
+    } catch (err) {
+      console.error("[shop-ticket] Error closing shop ticket:", err.message);
     }
     return;
   }
