@@ -1043,7 +1043,7 @@ client.on("messageCreate", async (message) => {
         "<a:emoji_24:1509923039327031367> 1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ\n\n" + "<:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
       )
       .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
-      .setThumbnail("https://tenor.com/uXlRhFQm8As.gif");
+      .setThumbnail("https://ik.imagekit.io/bfzcxlajkp/bonsai.gif");
 
     const websitesRow = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
@@ -1067,7 +1067,7 @@ client.on("messageCreate", async (message) => {
         "<:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
       )
       .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
-      .setThumbnail("https://tenor.com/uXlRhFQm8As.gif");
+      .setThumbnail("https://ik.imagekit.io/bfzcxlajkp/bonsai.gif");
 
     const toolsRow = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
@@ -1100,7 +1100,7 @@ client.on("messageCreate", async (message) => {
         "<:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
       )
       .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
-      .setThumbnail("https://tenor.com/uXlRhFQm8As.gif");
+      .setThumbnail("https://ik.imagekit.io/bfzcxlajkp/bonsai.gif");
 
     const bypasserRow = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
