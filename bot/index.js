@@ -1043,7 +1043,7 @@ client.on("messageCreate", async (message) => {
         "<a:emoji_24:1509923039327031367> 1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ\n\n" + "<:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
       )
       .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
-      .setThumbnail("https://cdn.discordapp.com/attachments/1530107113584726097/1535089234040455178/bonsai-discord_1.gif?ex=6a767ec1&is=6a752d41&hm=ee06ad99cda14e9f51211340d23b9e1b47539503d8c32ada1886a87f124c1cbc&");
+      .setThumbnail("https://tenor.com/uXlRhFQm8As.gif");
 
     const websitesRow = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
@@ -1067,7 +1067,7 @@ client.on("messageCreate", async (message) => {
         "<:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
       )
       .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
-      .setThumbnail("https://cdn.discordapp.com/attachments/1530107113584726097/1535089234040455178/bonsai-discord_1.gif?ex=6a767ec1&is=6a752d41&hm=ee06ad99cda14e9f51211340d23b9e1b47539503d8c32ada1886a87f124c1cbc&");
+      .setThumbnail("https://tenor.com/uXlRhFQm8As.gif");
 
     const toolsRow = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
@@ -1100,7 +1100,7 @@ client.on("messageCreate", async (message) => {
         "<:emoji_14:1508646444607864872> ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**"
       )
       .setImage("https://image2url.com/r2/default/gifs/1768488617981-bdc4c780-144f-4a40-8906-ddf01eadb705.gif")
-      .setThumbnail("https://cdn.discordapp.com/attachments/1530107113584726097/1535089234040455178/bonsai-discord_1.gif?ex=6a767ec1&is=6a752d41&hm=ee06ad99cda14e9f51211340d23b9e1b47539503d8c32ada1886a87f124c1cbc&");
+      .setThumbnail("https://tenor.com/uXlRhFQm8As.gif");
 
     const bypasserRow = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
